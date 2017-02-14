@@ -8,4 +8,12 @@ are all now directly at the top level of the Git repository).
 The XCode projects are not for the most current version of XCode anyway, so developers working on Mac OS versions will
 need to let XCode update the projects, and there some further modification may be necessary (if previous updates are
 anything to go by). Probably the most efficient strategy would be to update the projects to work directly with the
-current repository directory hieerarchy.
+current repository directory hierarchy.
+
+It will be apparent on perusal that the original project organization did not follow the one-object-one-project model
+used by the examples in the Max SDK. That was found to be bulky when developing many dozens of related Max objects.
+In the very early days of developing Litter Power, there had been an attempt to maintain all objects within a single
+project (this was in the days of CodeWarrior). That other extreme also proved to be inefficient. The compromise found
+was to have a small number of projects, each containing a manageable number of projects for closely related objects.
+Each XCode project maps to one source code directory and one resources directory. And the XCode projects all use a certain
+amount of common code located in the LitterLib subdirectory.
