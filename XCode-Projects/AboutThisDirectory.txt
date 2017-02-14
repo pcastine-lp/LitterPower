@@ -1,0 +1,11 @@
+These XCode Project files are, in the initial commit, example files that will need some modification to build objects.
+A word of explanaiton:
+
+Before Github, these XCode projects were at the top level of the Litter Power development directory and were designed
+to use two main subdirectories: a Sources/ subdirectory (including the subdirectories Chaos, Continuous, etc., which
+are all now directly at the top level of the Git repository).
+
+The XCode projects are not for the most current version of XCode anyway, so developers working on Mac OS versions will
+need to let XCode update the projects, and there some further modification may be necessary (if previous updates are
+anything to go by). Probably the most efficient strategy would be to update the projects to work directly with the
+current repository directory hieerarchy.
