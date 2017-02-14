@@ -1,0 +1,11 @@
+Resource files used in building the Litter Power Objects
+
+Although the factoring out of resources for objects has its roots in conventions that were mandated by Classic Mac OS
+(and the Classic Mac OS resource-fork approach to file systems is no longer used on either Max OS X, never mind the
+situation on Windows), the separation of actual executable code from strings, images, etc. is a sound principle. Note
+that application development with Cocoa on Mac OS has an even stronger separation of code from resources, and Windows
+development tools also factor these things apart.
+
+One of the long-standing To-Dos for Litter Power has been to move the factoring of resources based around Classic 
+Mac OS conventions to a more modern framework. The current state of the resources is something of a stop-gap measure
+until that evolution can be made.
