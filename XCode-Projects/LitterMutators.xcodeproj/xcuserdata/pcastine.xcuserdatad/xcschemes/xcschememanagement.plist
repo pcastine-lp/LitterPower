@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Frequency Domain (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>PV2Noise (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Time Domain (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>Value Interval (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>042BE1170A94770D0008B638</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>042BE5E00A94AB550008B638</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04E4A4E70A95F8D9004B0E9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04E4A4FC0A95F91A004B0E9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
