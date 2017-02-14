@@ -1,0 +1,1030 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		042BE9CF0A94F6B80008B638 /* MiscUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 041C1E3F0A5D702200991CC7 /* MiscUtils.c */; };
+		042BE9D00A94F6B80008B638 /* MaxUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 041C1F980A5D781D00991CC7 /* MaxUtils.c */; };
+		042BE9D30A94F6B80008B638 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
+		042BE9D40A94F6B80008B638 /* MaxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F5B62020919440900A62EB9 /* MaxAPI.framework */; };
+		042BEA3B0A94F8020008B638 /* MaxAudioAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042BE6050A94ACB10008B638 /* MaxAudioAPI.framework */; };
+		042BEA3F0A94F8230008B638 /* LitterLib.c in Sources */ = {isa = PBXBuildFile; fileRef = 041C1E3D0A5D702200991CC7 /* LitterLib.c */; };
+		042BEAA40A94FAB20008B638 /* MiscUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 041C1E3F0A5D702200991CC7 /* MiscUtils.c */; };
+		042BEAA50A94FAB20008B638 /* MaxUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 041C1F980A5D781D00991CC7 /* MaxUtils.c */; };
+		042BEAA70A94FAB20008B638 /* LitterLib.c in Sources */ = {isa = PBXBuildFile; fileRef = 041C1E3D0A5D702200991CC7 /* LitterLib.c */; };
+		042BEAA90A94FAB20008B638 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
+		042BEAAA0A94FAB20008B638 /* MaxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F5B62020919440900A62EB9 /* MaxAPI.framework */; };
+		042BEB030A94FF490008B638 /* MiscUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 041C1E3F0A5D702200991CC7 /* MiscUtils.c */; };
+		042BEB040A94FF490008B638 /* MaxUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 041C1F980A5D781D00991CC7 /* MaxUtils.c */; };
+		042BEB050A94FF490008B638 /* LitterLib.c in Sources */ = {isa = PBXBuildFile; fileRef = 041C1E3D0A5D702200991CC7 /* LitterLib.c */; };
+		042BEB080A94FF490008B638 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
+		042BEB090A94FF490008B638 /* MaxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F5B62020919440900A62EB9 /* MaxAPI.framework */; };
+		042BEB0A0A94FF490008B638 /* MaxAudioAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042BE6050A94ACB10008B638 /* MaxAudioAPI.framework */; };
+		042BEB7D0A9501FB0008B638 /* MiscUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 041C1E3F0A5D702200991CC7 /* MiscUtils.c */; };
+		042BEB7E0A9501FB0008B638 /* MaxUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 041C1F980A5D781D00991CC7 /* MaxUtils.c */; };
+		042BEB7F0A9501FB0008B638 /* LitterLib.c in Sources */ = {isa = PBXBuildFile; fileRef = 041C1E3D0A5D702200991CC7 /* LitterLib.c */; };
+		042BEB820A9501FB0008B638 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
+		042BEB830A9501FB0008B638 /* MaxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F5B62020919440900A62EB9 /* MaxAPI.framework */; };
+		042BEBAF0A9502A20008B638 /* MiscUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 041C1E3F0A5D702200991CC7 /* MiscUtils.c */; };
+		042BEBB00A9502A20008B638 /* MaxUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 041C1F980A5D781D00991CC7 /* MaxUtils.c */; };
+		042BEBB10A9502A20008B638 /* LitterLib.c in Sources */ = {isa = PBXBuildFile; fileRef = 041C1E3D0A5D702200991CC7 /* LitterLib.c */; };
+		042BEBB40A9502A20008B638 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
+		042BEBB50A9502A20008B638 /* MaxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F5B62020919440900A62EB9 /* MaxAPI.framework */; };
+		04E4A0D70A95BDA4004B0E9C /* ccc.r in Rez */ = {isa = PBXBuildFile; fileRef = 04E4A0D20A95BDA4004B0E9C /* ccc.r */; };
+		04E4A0E50A95BF98004B0E9C /* ccc.c in Sources */ = {isa = PBXBuildFile; fileRef = 04E4A0E00A95BF98004B0E9C /* ccc.c */; };
+		04E4A0EE0A95D527004B0E9C /* ccc~.c in Sources */ = {isa = PBXBuildFile; fileRef = 04E4A0E10A95BF98004B0E9C /* ccc~.c */; };
+		04E4A0EF0A95D534004B0E9C /* ccc~.r in Rez */ = {isa = PBXBuildFile; fileRef = 04E4A0D30A95BDA4004B0E9C /* ccc~.r */; };
+		04E4A0F30A95D7F5004B0E9C /* poppy.c in Sources */ = {isa = PBXBuildFile; fileRef = 04E4A0E30A95BF98004B0E9C /* poppy.c */; };
+		04E4A0F40A95D7FA004B0E9C /* poppy.r in Rez */ = {isa = PBXBuildFile; fileRef = 04E4A0D50A95BDA4004B0E9C /* poppy.r */; };
+		04E4A0F60A95D8B3004B0E9C /* poppy~.c in Sources */ = {isa = PBXBuildFile; fileRef = 04E4A0E40A95BF98004B0E9C /* poppy~.c */; };
+		04E4A0F70A95D8B8004B0E9C /* poppy~.r in Rez */ = {isa = PBXBuildFile; fileRef = 04E4A0D60A95BDA4004B0E9C /* poppy~.r */; };
+		04E4A0FC0A95D90A004B0E9C /* lya.c in Sources */ = {isa = PBXBuildFile; fileRef = 04E4A0E20A95BF98004B0E9C /* lya.c */; };
+		04E4A0FD0A95D910004B0E9C /* lya.r in Rez */ = {isa = PBXBuildFile; fileRef = 04E4A0D40A95BDA4004B0E9C /* lya.r */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		041C1E3D0A5D702200991CC7 /* LitterLib.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = LitterLib.c; sourceTree = "<group>"; };
+		041C1E3E0A5D702200991CC7 /* LitterLib.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = LitterLib.h; sourceTree = "<group>"; };
+		041C1E3F0A5D702200991CC7 /* MiscUtils.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = MiscUtils.c; sourceTree = "<group>"; };
+		041C1E400A5D702200991CC7 /* MiscUtils.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MiscUtils.h; sourceTree = "<group>"; };
+		041C1F980A5D781D00991CC7 /* MaxUtils.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = MaxUtils.c; sourceTree = "<group>"; };
+		041C1F990A5D781D00991CC7 /* MaxUtils.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MaxUtils.h; sourceTree = "<group>"; };
+		042BE6050A94ACB10008B638 /* MaxAudioAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MaxAudioAPI.framework; path = /Library/Frameworks/MaxAudioAPI.framework; sourceTree = "<absolute>"; };
+		042BE9DC0A94F6B80008B638 /* lp.poppy~.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lp.poppy~.mxo"; sourceTree = BUILT_PRODUCTS_DIR; };
+		042BEA5C0A94F9810008B638 /* Litter Globals.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = "Litter Globals.r"; path = "Resources/Litter Globals.r"; sourceTree = "<group>"; };
+		042BEAB20A94FAB20008B638 /* lp.poppy.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lp.poppy.mxo; sourceTree = BUILT_PRODUCTS_DIR; };
+		042BEB120A94FF490008B638 /* lp.ccc~.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lp.ccc~.mxo"; sourceTree = BUILT_PRODUCTS_DIR; };
+		042BEB8B0A9501FB0008B638 /* lp.ccc.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lp.ccc.mxo; sourceTree = BUILT_PRODUCTS_DIR; };
+		042BEBBD0A9502A20008B638 /* lp.lya.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lp.lya.mxo; sourceTree = BUILT_PRODUCTS_DIR; };
+		04E4A0D20A95BDA4004B0E9C /* ccc.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = ccc.r; path = Resources/Chaos/ccc.r; sourceTree = "<group>"; };
+		04E4A0D30A95BDA4004B0E9C /* ccc~.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = "ccc~.r"; path = "Resources/Chaos/ccc~.r"; sourceTree = "<group>"; };
+		04E4A0D40A95BDA4004B0E9C /* lya.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = lya.r; path = Resources/Chaos/lya.r; sourceTree = "<group>"; };
+		04E4A0D50A95BDA4004B0E9C /* poppy.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = poppy.r; path = Resources/Chaos/poppy.r; sourceTree = "<group>"; };
+		04E4A0D60A95BDA4004B0E9C /* poppy~.r */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.rez; name = "poppy~.r"; path = "Resources/Chaos/poppy~.r"; sourceTree = "<group>"; };
+		04E4A0E00A95BF98004B0E9C /* ccc.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ccc.c; path = Sources/Chaos/ccc.c; sourceTree = "<group>"; };
+		04E4A0E10A95BF98004B0E9C /* ccc~.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = "ccc~.c"; path = "Sources/Chaos/ccc~.c"; sourceTree = "<group>"; };
+		04E4A0E20A95BF98004B0E9C /* lya.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = lya.c; path = Sources/Chaos/lya.c; sourceTree = "<group>"; };
+		04E4A0E30A95BF98004B0E9C /* poppy.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = poppy.c; path = Sources/Chaos/poppy.c; sourceTree = "<group>"; };
+		04E4A0E40A95BF98004B0E9C /* poppy~.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = "poppy~.c"; path = "Sources/Chaos/poppy~.c"; sourceTree = "<group>"; };
+		04E4A6CB0A9633E2004B0E9C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
+		08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		0F5B62020919440900A62EB9 /* MaxAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MaxAPI.framework; path = /Library/Frameworks/MaxAPI.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		042BE9D20A94F6B80008B638 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042BE9D30A94F6B80008B638 /* Carbon.framework in Frameworks */,
+				042BE9D40A94F6B80008B638 /* MaxAPI.framework in Frameworks */,
+				042BEA3B0A94F8020008B638 /* MaxAudioAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042BEAA80A94FAB20008B638 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042BEAA90A94FAB20008B638 /* Carbon.framework in Frameworks */,
+				042BEAAA0A94FAB20008B638 /* MaxAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042BEB070A94FF490008B638 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042BEB080A94FF490008B638 /* Carbon.framework in Frameworks */,
+				042BEB090A94FF490008B638 /* MaxAPI.framework in Frameworks */,
+				042BEB0A0A94FF490008B638 /* MaxAudioAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042BEB810A9501FB0008B638 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042BEB820A9501FB0008B638 /* Carbon.framework in Frameworks */,
+				042BEB830A9501FB0008B638 /* MaxAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042BEBB30A9502A20008B638 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042BEBB40A9502A20008B638 /* Carbon.framework in Frameworks */,
+				042BEBB50A9502A20008B638 /* MaxAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041C1E3B0A5D702200991CC7 /* LitterLib */ = {
+			isa = PBXGroup;
+			children = (
+				041C1E3D0A5D702200991CC7 /* LitterLib.c */,
+				041C1E3E0A5D702200991CC7 /* LitterLib.h */,
+				041C1F980A5D781D00991CC7 /* MaxUtils.c */,
+				041C1F990A5D781D00991CC7 /* MaxUtils.h */,
+				041C1E3F0A5D702200991CC7 /* MiscUtils.c */,
+				041C1E400A5D702200991CC7 /* MiscUtils.h */,
+			);
+			name = LitterLib;
+			path = Sources/LitterLib;
+			sourceTree = "<group>";
+		};
+		089C166AFE841209C02AAC07 /* maximum */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77ADFE841716C02AAC07 /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				19C28FB4FE9D528D11CA2CBB /* Products */,
+			);
+			name = maximum;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				0F5B62020919440900A62EB9 /* MaxAPI.framework */,
+				042BE6050A94ACB10008B638 /* MaxAudioAPI.framework */,
+				08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04E4A6CB0A9633E2004B0E9C /* Info.plist */,
+				04E4A0D20A95BDA4004B0E9C /* ccc.r */,
+				04E4A0D30A95BDA4004B0E9C /* ccc~.r */,
+				04E4A0D40A95BDA4004B0E9C /* lya.r */,
+				04E4A0D50A95BDA4004B0E9C /* poppy.r */,
+				04E4A0D60A95BDA4004B0E9C /* poppy~.r */,
+				042BEA5C0A94F9810008B638 /* Litter Globals.r */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77ADFE841716C02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				04E4A0E00A95BF98004B0E9C /* ccc.c */,
+				04E4A0E10A95BF98004B0E9C /* ccc~.c */,
+				04E4A0E20A95BF98004B0E9C /* lya.c */,
+				04E4A0E30A95BF98004B0E9C /* poppy.c */,
+				04E4A0E40A95BF98004B0E9C /* poppy~.c */,
+				041C1E3B0A5D702200991CC7 /* LitterLib */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		19C28FB4FE9D528D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				042BE9DC0A94F6B80008B638 /* lp.poppy~.mxo */,
+				042BEAB20A94FAB20008B638 /* lp.poppy.mxo */,
+				042BEB120A94FF490008B638 /* lp.ccc~.mxo */,
+				042BEB8B0A9501FB0008B638 /* lp.ccc.mxo */,
+				042BEBBD0A9502A20008B638 /* lp.lya.mxo */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		042BE9CC0A94F6B80008B638 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042BEAA10A94FAB20008B638 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042BEB000A94FF490008B638 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042BEB7A0A9501FB0008B638 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042BEBAC0A9502A20008B638 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		042BE9CA0A94F6B80008B638 /* Population Grown/Signals (UB) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042BE9D80A94F6B80008B638 /* Build configuration list for PBXNativeTarget "Population Grown/Signals (UB)" */;
+			buildPhases = (
+				042BE9CB0A94F6B80008B638 /* ShellScript */,
+				042BE9CC0A94F6B80008B638 /* Headers */,
+				042BE9CD0A94F6B80008B638 /* Resources */,
+				042BE9CE0A94F6B80008B638 /* Sources */,
+				042BE9D20A94F6B80008B638 /* Frameworks */,
+				042BE9D50A94F6B80008B638 /* Rez */,
+				042BE9D70A94F6B80008B638 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Population Grown/Signals (UB)";
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = MaxExternal;
+			productReference = 042BE9DC0A94F6B80008B638 /* lp.poppy~.mxo */;
+			productType = "com.apple.product-type.bundle";
+		};
+		042BEA9F0A94FAB20008B638 /* Population Growth/Control (UB) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042BEAAE0A94FAB20008B638 /* Build configuration list for PBXNativeTarget "Population Growth/Control (UB)" */;
+			buildPhases = (
+				042BEAA00A94FAB20008B638 /* ShellScript */,
+				042BEAA10A94FAB20008B638 /* Headers */,
+				042BEAA20A94FAB20008B638 /* Resources */,
+				042BEAA30A94FAB20008B638 /* Sources */,
+				042BEAA80A94FAB20008B638 /* Frameworks */,
+				042BEAAB0A94FAB20008B638 /* Rez */,
+				042BEAAD0A94FAB20008B638 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Population Growth/Control (UB)";
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = MaxExternal;
+			productReference = 042BEAB20A94FAB20008B638 /* lp.poppy.mxo */;
+			productType = "com.apple.product-type.bundle";
+		};
+		042BEAFE0A94FF490008B638 /* Schuster Pink/Signals (UB) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042BEB0E0A94FF490008B638 /* Build configuration list for PBXNativeTarget "Schuster Pink/Signals (UB)" */;
+			buildPhases = (
+				042BEAFF0A94FF490008B638 /* ShellScript */,
+				042BEB000A94FF490008B638 /* Headers */,
+				042BEB010A94FF490008B638 /* Resources */,
+				042BEB020A94FF490008B638 /* Sources */,
+				042BEB070A94FF490008B638 /* Frameworks */,
+				042BEB0B0A94FF490008B638 /* Rez */,
+				042BEB0D0A94FF490008B638 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Schuster Pink/Signals (UB)";
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = MaxExternal;
+			productReference = 042BEB120A94FF490008B638 /* lp.ccc~.mxo */;
+			productType = "com.apple.product-type.bundle";
+		};
+		042BEB780A9501FB0008B638 /* Schuster Pink/Control (UB) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042BEB870A9501FB0008B638 /* Build configuration list for PBXNativeTarget "Schuster Pink/Control (UB)" */;
+			buildPhases = (
+				042BEB790A9501FB0008B638 /* ShellScript */,
+				042BEB7A0A9501FB0008B638 /* Headers */,
+				042BEB7B0A9501FB0008B638 /* Resources */,
+				042BEB7C0A9501FB0008B638 /* Sources */,
+				042BEB810A9501FB0008B638 /* Frameworks */,
+				042BEB840A9501FB0008B638 /* Rez */,
+				042BEB860A9501FB0008B638 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Schuster Pink/Control (UB)";
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = MaxExternal;
+			productReference = 042BEB8B0A9501FB0008B638 /* lp.ccc.mxo */;
+			productType = "com.apple.product-type.bundle";
+		};
+		042BEBAA0A9502A20008B638 /* Lyapunov/Control (UB) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042BEBB90A9502A20008B638 /* Build configuration list for PBXNativeTarget "Lyapunov/Control (UB)" */;
+			buildPhases = (
+				042BEBAB0A9502A20008B638 /* ShellScript */,
+				042BEBAC0A9502A20008B638 /* Headers */,
+				042BEBAD0A9502A20008B638 /* Resources */,
+				042BEBAE0A9502A20008B638 /* Sources */,
+				042BEBB30A9502A20008B638 /* Frameworks */,
+				042BEBB60A9502A20008B638 /* Rez */,
+				042BEBB80A9502A20008B638 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lyapunov/Control (UB)";
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = MaxExternal;
+			productReference = 042BEBBD0A9502A20008B638 /* lp.lya.mxo */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = 0FF6670E096B494E00E9E0B4 /* Build configuration list for PBXProject "LitterChaos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* maximum */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				042BEB780A9501FB0008B638 /* Schuster Pink/Control (UB) */,
+				042BEAFE0A94FF490008B638 /* Schuster Pink/Signals (UB) */,
+				042BEA9F0A94FAB20008B638 /* Population Growth/Control (UB) */,
+				042BE9CA0A94F6B80008B638 /* Population Grown/Signals (UB) */,
+				042BEBAA0A9502A20008B638 /* Lyapunov/Control (UB) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		042BE9CD0A94F6B80008B638 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042BEAA20A94FAB20008B638 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042BEB010A94FF490008B638 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042BEB7B0A9501FB0008B638 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042BEBAD0A9502A20008B638 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		042BE9D50A94F6B80008B638 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E4A0F70A95D8B8004B0E9C /* poppy~.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042BEAAB0A94FAB20008B638 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E4A0F40A95D7FA004B0E9C /* poppy.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042BEB0B0A94FF490008B638 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E4A0EF0A95D534004B0E9C /* ccc~.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042BEB840A9501FB0008B638 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E4A0D70A95BDA4004B0E9C /* ccc.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042BEBB60A9502A20008B638 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E4A0FD0A95D910004B0E9C /* lya.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		042BE9CB0A94F6B80008B638 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Resources/Chaos/$(PRODUCT_SHORT_NAME).r",
+			);
+			outputPaths = (
+				"$(SRCROOT)/Resources/Chaos/$(PRODUCT_SHORT_NAME).versioninfo.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT\"/Resources/ExtractVersionInfo.sh <\"$SRCROOT\"/Resources/Chaos/$PRODUCT_SHORT_NAME.r >\"$SRCROOT\"/Resources/Chaos/$PRODUCT_SHORT_NAME.versioninfo.h";
+		};
+		042BE9D70A94F6B80008B638 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Resources/IconSuites/LitterIconSuite.mxo.Starter/*",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = Resources/InstallSPIcon.bash;
+		};
+		042BEAA00A94FAB20008B638 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Resources/Chaos/$(PRODUCT_SHORT_NAME).r",
+			);
+			outputPaths = (
+				"$(SRCROOT)/Resources/Chaos/$(PRODUCT_SHORT_NAME).versioninfo.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT\"/Resources/ExtractVersionInfo.sh <\"$SRCROOT\"/Resources/Chaos/$PRODUCT_SHORT_NAME.r >\"$SRCROOT\"/Resources/Chaos/$PRODUCT_SHORT_NAME.versioninfo.h";
+		};
+		042BEAAD0A94FAB20008B638 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Resources/IconSuites/LitterIconSuite.mxo.Starter/*",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = Resources/InstallSPIcon.bash;
+		};
+		042BEAFF0A94FF490008B638 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Resources/Chaos/$(PRODUCT_SHORT_NAME).r",
+			);
+			outputPaths = (
+				"$(SRCROOT)/Resources/Chaos/$(PRODUCT_SHORT_NAME).versioninfo.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT\"/Resources/ExtractVersionInfo.sh <\"$SRCROOT\"/Resources/Chaos/$PRODUCT_SHORT_NAME.r >\"$SRCROOT\"/Resources/Chaos/$PRODUCT_SHORT_NAME.versioninfo.h";
+		};
+		042BEB0D0A94FF490008B638 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Resources/IconSuites/LitterIconSuite.mxo.Pro/*",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = Resources/InstallIcon.bash;
+		};
+		042BEB790A9501FB0008B638 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Resources/Chaos/$(PRODUCT_SHORT_NAME).r",
+			);
+			outputPaths = (
+				"$(SRCROOT)/Resources/Chaos/$(PRODUCT_SHORT_NAME).versioninfo.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT\"/Resources/ExtractVersionInfo.sh <\"$SRCROOT\"/Resources/Chaos/$PRODUCT_SHORT_NAME.r >\"$SRCROOT\"/Resources/Chaos/$PRODUCT_SHORT_NAME.versioninfo.h";
+		};
+		042BEB860A9501FB0008B638 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Resources/IconSuites/LitterIconSuite.mxo.Pro/*",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = Resources/InstallIcon.bash;
+		};
+		042BEBAB0A9502A20008B638 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Resources/Chaos/$(PRODUCT_SHORT_NAME).r",
+			);
+			outputPaths = (
+				"$(SRCROOT)/Resources/Chaos/$(PRODUCT_SHORT_NAME).versioninfo.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT\"/Resources/ExtractVersionInfo.sh <\"$SRCROOT\"/Resources/Chaos/$PRODUCT_SHORT_NAME.r >\"$SRCROOT\"/Resources/Chaos/$PRODUCT_SHORT_NAME.versioninfo.h";
+		};
+		042BEBB80A9502A20008B638 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Resources/IconSuites/LitterIconSuite.mxo.Pro/*",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = Resources/InstallIcon.bash;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		042BE9CE0A94F6B80008B638 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042BE9CF0A94F6B80008B638 /* MiscUtils.c in Sources */,
+				042BE9D00A94F6B80008B638 /* MaxUtils.c in Sources */,
+				042BEA3F0A94F8230008B638 /* LitterLib.c in Sources */,
+				04E4A0F60A95D8B3004B0E9C /* poppy~.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042BEAA30A94FAB20008B638 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042BEAA40A94FAB20008B638 /* MiscUtils.c in Sources */,
+				042BEAA50A94FAB20008B638 /* MaxUtils.c in Sources */,
+				042BEAA70A94FAB20008B638 /* LitterLib.c in Sources */,
+				04E4A0F30A95D7F5004B0E9C /* poppy.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042BEB020A94FF490008B638 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042BEB030A94FF490008B638 /* MiscUtils.c in Sources */,
+				042BEB040A94FF490008B638 /* MaxUtils.c in Sources */,
+				042BEB050A94FF490008B638 /* LitterLib.c in Sources */,
+				04E4A0EE0A95D527004B0E9C /* ccc~.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042BEB7C0A9501FB0008B638 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042BEB7D0A9501FB0008B638 /* MiscUtils.c in Sources */,
+				042BEB7E0A9501FB0008B638 /* MaxUtils.c in Sources */,
+				042BEB7F0A9501FB0008B638 /* LitterLib.c in Sources */,
+				04E4A0E50A95BF98004B0E9C /* ccc.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042BEBAE0A9502A20008B638 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042BEBAF0A9502A20008B638 /* MiscUtils.c in Sources */,
+				042BEBB00A9502A20008B638 /* MaxUtils.c in Sources */,
+				042BEBB10A9502A20008B638 /* LitterLib.c in Sources */,
+				04E4A0FC0A95D90A004B0E9C /* lya.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		042BE9D90A94F6B80008B638 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__MAX_MSP_OBJECT__,
+					"$(inherited)",
+				);
+				PRODUCT_SHORT_NAME = "poppy~";
+				SDKROOT = macosx10.7;
+			};
+			name = Development;
+		};
+		042BE9DA0A94F6B80008B638 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__MAX_MSP_OBJECT__,
+					"$(inherited)",
+				);
+				PRODUCT_SHORT_NAME = "poppy~";
+				SDKROOT = macosx10.7;
+			};
+			name = Deployment;
+		};
+		042BE9DB0A94F6B80008B638 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__MAX_MSP_OBJECT__,
+					"$(inherited)",
+				);
+				PRODUCT_SHORT_NAME = "poppy~";
+				SDKROOT = macosx10.7;
+			};
+			name = Default;
+		};
+		042BEAAF0A94FAB20008B638 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_SHORT_NAME = poppy;
+				SDKROOT = macosx10.7;
+			};
+			name = Development;
+		};
+		042BEAB00A94FAB20008B638 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_SHORT_NAME = poppy;
+				SDKROOT = macosx10.7;
+			};
+			name = Deployment;
+		};
+		042BEAB10A94FAB20008B638 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_SHORT_NAME = poppy;
+				SDKROOT = macosx10.7;
+			};
+			name = Default;
+		};
+		042BEB0F0A94FF490008B638 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__MAX_MSP_OBJECT__,
+					"$(inherited)",
+				);
+				PRODUCT_SHORT_NAME = "ccc~";
+				SDKROOT = macosx10.7;
+			};
+			name = Development;
+		};
+		042BEB100A94FF490008B638 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__MAX_MSP_OBJECT__,
+					"$(inherited)",
+				);
+				PRODUCT_SHORT_NAME = "ccc~";
+				SDKROOT = macosx10.7;
+			};
+			name = Deployment;
+		};
+		042BEB110A94FF490008B638 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__MAX_MSP_OBJECT__,
+					"$(inherited)",
+				);
+				PRODUCT_SHORT_NAME = "ccc~";
+				SDKROOT = macosx10.7;
+			};
+			name = Default;
+		};
+		042BEB880A9501FB0008B638 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_SHORT_NAME = ccc;
+				SDKROOT = macosx10.7;
+			};
+			name = Development;
+		};
+		042BEB890A9501FB0008B638 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_SHORT_NAME = ccc;
+				SDKROOT = macosx10.7;
+			};
+			name = Deployment;
+		};
+		042BEB8A0A9501FB0008B638 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_SHORT_NAME = ccc;
+				SDKROOT = macosx10.7;
+			};
+			name = Default;
+		};
+		042BEBBA0A9502A20008B638 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_SHORT_NAME = lya;
+				SDKROOT = macosx10.7;
+			};
+			name = Development;
+		};
+		042BEBBB0A9502A20008B638 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_SHORT_NAME = lya;
+				SDKROOT = macosx10.7;
+			};
+			name = Deployment;
+		};
+		042BEBBC0A9502A20008B638 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				PRODUCT_SHORT_NAME = lya;
+				SDKROOT = macosx10.7;
+			};
+			name = Default;
+		};
+		0FF6670F096B494E00E9E0B4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(PROJECT_DIR)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Library/Frameworks,
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "../C74 Support/Universal Binary/max-includes/macho-prefix.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"__LITTER_UB__=1",
+					"$(inherited)",
+				);
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Developer/SDKs/MacOS10.4.u.skd/Developer/Headers/FlatCarbon,
+					"$(HEADER_SEARCH_PATHS_QUOTED_1)",
+				);
+				HEADER_SEARCH_PATHS_QUOTED_1 = "\"../C74 Support/Universal Binary\"/**";
+				INFOPLIST_FILE = Resources/Info.plist;
+				INFOPLIST_PREFIX_HEADER = "Resources/Chaos/$(PRODUCT_SHORT_NAME).versioninfo.h";
+				INFOPLIST_PREPROCESS = YES;
+				INSTALL_PATH = "/sysbuild/$(CONFIGURATION)/externals";
+				LIBRARY_STYLE = Bundle;
+				PRODUCT_NAME = "lp.$(PRODUCT_SHORT_NAME)";
+				REZ_PREFIX_FILE = /Developer/Headers/FlatCarbon/Types.r;
+				REZ_PREPROCESSOR_DEFINITIONS = "$(inherited) __LB_UB_VERSION__=1";
+				REZ_SEARCH_PATHS = (
+					"$(inherited)",
+					/Developer/Headers/FlatCarbon,
+				);
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "$(PROJECT_DIR)/xcodebuild";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) Sources/**";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = mxo;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		0FF66710096B494E00E9E0B4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				DSTROOT = "$(PROJECT_DIR)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Library/Frameworks,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "../C74 Support/Universal Binary/max-includes/macho-prefix.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"__LITTER_UB__=1",
+					"$(inherited)",
+				);
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Developer/SDKs/MacOS10.4.u.skd/Developer/Headers/FlatCarbon,
+					"$(HEADER_SEARCH_PATHS_QUOTED_1)",
+				);
+				HEADER_SEARCH_PATHS_QUOTED_1 = "\"../C74 Support/Universal Binary\"/**";
+				INFOPLIST_FILE = Resources/Info.plist;
+				INFOPLIST_PREFIX_HEADER = "Resources/Chaos/$(PRODUCT_SHORT_NAME).versioninfo.h";
+				INFOPLIST_PREPROCESS = YES;
+				INSTALL_PATH = "/sysbuild/$(CONFIGURATION)/externals";
+				LIBRARY_STYLE = Bundle;
+				PRODUCT_NAME = "lp.$(PRODUCT_SHORT_NAME)";
+				REZ_PREFIX_FILE = /Developer/Headers/FlatCarbon/Types.r;
+				REZ_PREPROCESSOR_DEFINITIONS = "$(inherited) __LB_UB_VERSION__=1";
+				REZ_SEARCH_PATHS = (
+					"$(inherited)",
+					/Developer/Headers/FlatCarbon,
+				);
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+				SYMROOT = "$(PROJECT_DIR)/xcodebuild";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) Sources/**";
+				WRAPPER_EXTENSION = mxo;
+			};
+			name = Deployment;
+		};
+		0FF66711096B494E00E9E0B4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = "$(PROJECT_DIR)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Library/Frameworks,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "../C74 Support/Universal Binary/max-includes/macho-prefix.h";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"__LITTER_UB__=1",
+					"$(inherited)",
+				);
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Developer/SDKs/MacOS10.4.u.skd/Developer/Headers/FlatCarbon,
+					"$(HEADER_SEARCH_PATHS_QUOTED_1)",
+				);
+				HEADER_SEARCH_PATHS_QUOTED_1 = "\"../C74 Support/Universal Binary\"/**";
+				INFOPLIST_FILE = Resources/Info.plist;
+				INFOPLIST_PREFIX_HEADER = "Resources/Chaos/$(PRODUCT_SHORT_NAME).versioninfo.h";
+				INFOPLIST_PREPROCESS = YES;
+				INSTALL_PATH = "/sysbuild/$(CONFIGURATION)/externals";
+				LIBRARY_STYLE = Bundle;
+				PRODUCT_NAME = "lp.$(PRODUCT_SHORT_NAME)";
+				REZ_PREFIX_FILE = /Developer/Headers/FlatCarbon/Types.r;
+				REZ_PREPROCESSOR_DEFINITIONS = "$(inherited) __LB_UB_VERSION__=1";
+				REZ_SEARCH_PATHS = (
+					"$(inherited)",
+					/Developer/Headers/FlatCarbon,
+				);
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+				SYMROOT = "$(PROJECT_DIR)/xcodebuild";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) Sources/**";
+				WRAPPER_EXTENSION = mxo;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		042BE9D80A94F6B80008B638 /* Build configuration list for PBXNativeTarget "Population Grown/Signals (UB)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042BE9D90A94F6B80008B638 /* Development */,
+				042BE9DA0A94F6B80008B638 /* Deployment */,
+				042BE9DB0A94F6B80008B638 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		042BEAAE0A94FAB20008B638 /* Build configuration list for PBXNativeTarget "Population Growth/Control (UB)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042BEAAF0A94FAB20008B638 /* Development */,
+				042BEAB00A94FAB20008B638 /* Deployment */,
+				042BEAB10A94FAB20008B638 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		042BEB0E0A94FF490008B638 /* Build configuration list for PBXNativeTarget "Schuster Pink/Signals (UB)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042BEB0F0A94FF490008B638 /* Development */,
+				042BEB100A94FF490008B638 /* Deployment */,
+				042BEB110A94FF490008B638 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		042BEB870A9501FB0008B638 /* Build configuration list for PBXNativeTarget "Schuster Pink/Control (UB)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042BEB880A9501FB0008B638 /* Development */,
+				042BEB890A9501FB0008B638 /* Deployment */,
+				042BEB8A0A9501FB0008B638 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		042BEBB90A9502A20008B638 /* Build configuration list for PBXNativeTarget "Lyapunov/Control (UB)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042BEBBA0A9502A20008B638 /* Development */,
+				042BEBBB0A9502A20008B638 /* Deployment */,
+				042BEBBC0A9502A20008B638 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		0FF6670E096B494E00E9E0B4 /* Build configuration list for PBXProject "LitterChaos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FF6670F096B494E00E9E0B4 /* Development */,
+				0FF66710096B494E00E9E0B4 /* Deployment */,
+				0FF66711096B494E00E9E0B4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

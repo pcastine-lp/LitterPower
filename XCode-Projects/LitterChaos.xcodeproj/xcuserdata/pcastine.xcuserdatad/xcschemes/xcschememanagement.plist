@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Lyapunov/Control (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Population Grown/Signals (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Population Growth/Control (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Schuster Pink/Control (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>Schuster Pink/Signals (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>042BE9CA0A94F6B80008B638</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>042BEA9F0A94FAB20008B638</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>042BEAFE0A94FF490008B638</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>042BEB780A9501FB0008B638</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>042BEBAA0A9502A20008B638</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
