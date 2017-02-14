@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundleGetInfoString</key>
+	<string>LPobjVersStr Copyright LPobjCRYears Peter Castine, Part of Litter Power 1.8 (LPobjBundle)</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string>de.castine.$(PRODUCT_NAME)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>iLaX</string>
+	<key>CFBundleShortVersionString</key>
+	<string>LPobjVersStr</string>
+	<key>CFBundleSignature</key>
+	<string>max2</string>
+	<key>CFBundleVersion</key>
+	<string>LPobjVersStr</string>
+	<key>CSResourcesFileMapped</key>
+	<true/>
+	<key>LPObjectLongVersionString</key>
+	<string>LPobjVersStr (OS X) Copyright LPobjCRYears Peter Castine</string>
+	<key>LPObjectShortVersionString</key>
+	<string>LPobjVersStr</string>
+	<key>LPPackageLongVersionString</key>
+	<string>Litter Power 1.8 -interim- (LPobjBundle)</string>
+	<key>LPPackageShortVersionString</key>
+	<string>1.8i1</string>
+	<key>LPPackageVersVal</key>
+	<integer>94592</integer>
+</dict>
+</plist>
