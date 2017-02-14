@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>1-Bit Noise (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>Dust (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Gaussian (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Linear Congruence (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>Low Frequency (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Markov Noise (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>Pitched Noise (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Plucked Noise (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>Segment Noise (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>Triangular/Linear (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>042BE1170A94770D0008B638</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04E4A2A10A95E992004B0E9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04E4A2BD0A95E9F9004B0E9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04E4A2DA0A95EA47004B0E9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04E4A2F40A95EAB7004B0E9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04E4A3120A95EB5E004B0E9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04E4A32C0A95EB95004B0E9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04E4A3450A95EBCB004B0E9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04E4A3740A95EC4E004B0E9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04E4A38F0A95ED5B004B0E9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
