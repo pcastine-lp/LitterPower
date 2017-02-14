@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Black (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Brown (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Gray (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>Multicolor (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Multicolor FP (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>Pink (McCartney) (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Pink (Voss) (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>White (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>042BE1170A94770D0008B638</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>046B793A0D1F015C00B77640</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04E4A2A10A95E992004B0E9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04E4A2BD0A95E9F9004B0E9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04E4A2DA0A95EA47004B0E9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04E4A2F40A95EAB7004B0E9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04E4A3120A95EB5E004B0E9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04E4A32C0A95EB95004B0E9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
