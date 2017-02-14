@@ -1,0 +1,10 @@
+/* Localized versions of strings */
+
+LPAssistIn1			= "Messages";
+LPAssistOut1		= "Result of vers message";
+/*LPHelpPath			= "./max-help";*/
+LPHelpPath			= "./Cycling '74/max-help";
+LPHelpSuffix		= ".maxhelp";
+LPExtrasSubDir		= "./patches/extras/Litter Power Extras";
+LPProOverview		= "Litter Pro Overview.maxpat";
+LPStarterOverview	= "Litter Starter Pack Overview.maxpat";
