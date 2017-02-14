@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Bernoulli Trials (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>Beta Binomial Model (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>Dice (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>I Ching (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Marsiglia Mother (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Mersenne Twister (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Parametric LC (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Poisson (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>TT800 (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Taus88 (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>Urn Model (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
+		<key>X-Negative Markov (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>Zipf (UB).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>040C335A0B9358BF0088CD19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>041D501B0B344092006AA565</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>042BE1170A94770D0008B638</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>042BE1340A9478260008B638</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>042BE1510A9478D90008B638</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>042BE16E0A94795D0008B638</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>042BE18B0A9479D00008B638</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>042BE1A50A947AE70008B638</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>042BE1C40A947B990008B638</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>042BE1DE0A947BDB0008B638</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>042BE1F80A947C210008B638</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>042BE2120A947C700008B638</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8D01CCC60486CAD60068D4B7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
