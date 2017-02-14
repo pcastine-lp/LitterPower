@@ -1,0 +1,1 @@
+#define __MAX_MSP_OBJECT__	1#include <MacHeaders.h>#include "TrialPeriod.h"

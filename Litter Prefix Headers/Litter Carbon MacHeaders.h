@@ -1,0 +1,1 @@
+#include <MacHeadersCarbon.h>#include "TrialPeriod.h"

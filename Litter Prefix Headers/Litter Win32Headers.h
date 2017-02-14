@@ -1,0 +1,1 @@
+#define WIN_VERSION	1#define USE_QTML	1#include <Win32Headers.mch>#include "TrialPeriod.h"
