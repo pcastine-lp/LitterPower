@@ -6,17 +6,17 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2001-2002 Peter Castine
+	Copyright:	Â© 2001-2002 Peter Castine
 
 	Change History (most recent first):
 
-         <6>     15Ð3Ð06    pc      Add expect message
-         <5>     14Ð1Ð04    pc      Update for Windows.
-         <4>    7Ð7Ð2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
-         <3>  30Ð12Ð2002    pc      Drop faux 'Vers' resource and related modifications. Add object
+         <6>     15â€“3â€“06    pc      Add expect message
+         <5>     14â€“1â€“04    pc      Update for Windows.
+         <4>    7â€“7â€“2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
+         <3>  30â€“12â€“2002    pc      Drop faux 'Vers' resource and related modifications. Add object
                                     version to DoInfo().
-         <2>  28Ð11Ð2002    pc      Tidy up after initial check in.
-         <1>  28Ð11Ð2002    pc      Initial check in.
+         <2>  28â€“11â€“2002    pc      Tidy up after initial check in.
+         <1>  28â€“11â€“2002    pc      Initial check in.
 		27-Apr-2001:	First implementation.
 */
 
@@ -24,7 +24,7 @@
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"
 #include "TrialPeriodUtils.h"
@@ -32,7 +32,7 @@
 #include "UniformExpectations.h"
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char	kClassName[]		= "lp.lili";			// Class name
 
@@ -51,7 +51,7 @@ enum {
 	};
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	LITTER_CORE_OBJECT(Object, coreObject);
@@ -63,7 +63,7 @@ typedef struct {
 	} objLili;
 
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 static void LiliSet		(objLili*, UInt32);
 
@@ -71,7 +71,7 @@ static void LiliSet		(objLili*, UInt32);
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -125,7 +125,7 @@ noMoreDefaults:
 	}
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *
@@ -182,7 +182,7 @@ static void LiliMod		(objLili* me, UInt32 iMod)	{ me->mod = iMod; }
 
 
 #pragma mark -
-#pragma mark ¥ Attribute/Information Functions
+#pragma mark â€¢ Attribute/Information Functions
 
 /******************************************************************************************
  *

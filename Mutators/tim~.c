@@ -5,14 +5,14 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2002 Peter Castine. All rights reserved.
+	Copyright:	Â© 2002 Peter Castine. All rights reserved.
 
 	Change History (most recent first):
 
-         <4>     10Ð1Ð04    pc      Update for Windows, using new LitterLib calls.
-         <3>    7Ð7Ð2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
-         <2>  30Ð12Ð2002    pc      Add object version to DoInfo()
-         <1>  30Ð12Ð2002    pc      Initial Check-In
+         <4>     10â€“1â€“04    pc      Update for Windows, using new LitterLib calls.
+         <3>    7â€“7â€“2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
+         <2>  30â€“12â€“2002    pc      Add object version to DoInfo()
+         <1>  30â€“12â€“2002    pc      Initial Check-In
 */
 
 
@@ -24,7 +24,7 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2000-01 Peter Castine
+	Copyright:	Â© 2000-01 Peter Castine
 
 	Change History (most recent first):
 		15-Nov-2000:	First implementation (based on previous Mutator~.c)
@@ -32,18 +32,18 @@
 
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "TrialPeriodUtils.h"
 #include "imLib.h"
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char*	kClassName		= "lp.tim~";			// Class name
 
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 void*	NewMutator(Symbol*, short, Atom*);
 
@@ -151,7 +151,7 @@ main(void)
 	}
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -239,7 +239,7 @@ NewMutator(
 	}
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *
@@ -326,7 +326,7 @@ DoTattle(
 
 
 #pragma mark -
-#pragma mark ¥ DSP Methods
+#pragma mark â€¢ DSP Methods
 
 /******************************************************************************************
  *

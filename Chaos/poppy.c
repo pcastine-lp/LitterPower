@@ -2,21 +2,21 @@
 	File:		poppy.c
 
 	Contains:	Max external object generating sequences of populations from the classic
-				(chaotic) population growth model: p' <- rápá(1-p)
+				(chaotic) population growth model: p' <- rÂ·pÂ·(1-p)
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2002 Peter Castine
+	Copyright:	Â© 2002 Peter Castine
 
 	Change History (most recent first):
 
-         <6>    2Ð3Ð2005    pc      Update for CW 8 <cfloat> implementation.
-         <5>     11Ð1Ð04    pc      Update for Windows.
-         <4>    7Ð7Ð2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
-         <3>  30Ð12Ð2002    pc      Drop faux 'Vers' resource and related modifications. Add object
+         <6>    2â€“3â€“2005    pc      Update for CW 8 <cfloat> implementation.
+         <5>     11â€“1â€“04    pc      Update for Windows.
+         <4>    7â€“7â€“2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
+         <3>  30â€“12â€“2002    pc      Drop faux 'Vers' resource and related modifications. Add object
                                     version to DoInfo().
-         <2>  28Ð11Ð2002    pc      Tidy up after check in.
-         <1>  28Ð11Ð2002    pc      Initial check in.
+         <2>  28â€“11â€“2002    pc      Tidy up after check in.
+         <1>  28â€“11â€“2002    pc      Initial check in.
 */
 
 
@@ -30,7 +30,7 @@ Previous history:
  ******************************************************************************************/
 
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"
 #include "TrialPeriodUtils.h"
@@ -43,7 +43,7 @@ Previous history:
 
 #include <math.h>			// For fabs(), log()
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 	// These are common to all varieties
 const char	kClassName[]		= "lp.poppy";			// Class name
@@ -75,11 +75,11 @@ enum {
 	};
 
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	Object			coreObject;
@@ -97,12 +97,12 @@ typedef struct {
 	} tPoppy;
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
 //t_messlist*	gPoppyClass		= NIL;
 
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 	// Class message functions
 void*		NewPoppy(Symbol*, short, Atom*);
@@ -127,7 +127,7 @@ static Boolean SetRates(tPoppy*, short, Atom*);
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Inline Functions
+#pragma mark â€¢ Inline Functions
 
 static inline double NextPop(double iPop, double iGrowth)
 			{ return iGrowth * iPop * (1.0 - iPop); }
@@ -177,7 +177,7 @@ main(void)
 	}
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -294,7 +294,7 @@ FreePoppy(
 	
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *

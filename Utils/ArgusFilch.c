@@ -17,19 +17,19 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2006 Peter Castine
+	Copyright:	Â© 2006 Peter Castine
 
 	Change History (most recent first):
 
-         <2>    8Ð5Ð2006    pc      Remove debugging post() calls
-         <1>   26Ð4Ð2006    pc      First checked in. Still contains some debugging code to trim.
+         <2>    8â€“5â€“2006    pc      Remove debugging post() calls
+         <1>   26â€“4â€“2006    pc      First checked in. Still contains some debugging code to trim.
 */
 
 
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"	// Also #includes MaxUtils.h, ext.h
 #include "TrialPeriodUtils.h"
@@ -42,7 +42,7 @@
 #endif
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char*	kClassName		= "lp.argus";			// Class name
 
@@ -59,7 +59,7 @@ enum {
 	};
 
 
-#pragma mark ¥ Windows Dynamic Linking
+#pragma mark â€¢ Windows Dynamic Linking
 
 #ifdef WIN_VERSION
 typedef void		(*tWindAPIVisFunc)(t_wind*);
@@ -74,7 +74,7 @@ tWindAPISysMove				WindSysWindMoveFunc	= NIL;
 #endif
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	Object		coreObject;
@@ -82,12 +82,12 @@ typedef struct {
 	} objFilch;
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
 static Boolean gHasWindAPI = false;
 
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 	// Class message functions
 void*	ArgusNew(void);
@@ -105,7 +105,7 @@ static void ArgusInfo	(objFilch*);
 
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Inline Functions
+#pragma mark â€¢ Inline Functions
 
 /******************************************************************************************
  *
@@ -234,7 +234,7 @@ main(void)
 	}
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -260,7 +260,7 @@ punt:
 	}
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *

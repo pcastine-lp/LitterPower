@@ -6,21 +6,21 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2001-2002 Peter Castine
+	Copyright:	Â© 2001-2002 Peter Castine
 
 	Change History (most recent first):
 
-         <9>     11Ð1Ð04    pc      Update for modified LitterInit()
-         <8>      8Ð1Ð04    pc      Update for Windows.
-         <7>    17Ð12Ð03    pc      Update for Windows.
-         <6>   8Ð16Ð2003    pc      Forgot to remove legacy finder_addclass() call while adding
+         <9>     11â€“1â€“04    pc      Update for modified LitterInit()
+         <8>      8â€“1â€“04    pc      Update for Windows.
+         <7>    17â€“12â€“03    pc      Update for Windows.
+         <6>   8â€“16â€“2003    pc      Forgot to remove legacy finder_addclass() call while adding
                                     LitterAddClass(). Fixed.
-         <5>    6Ð7Ð2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
-         <4>  30Ð12Ð2002    pc      Add object version to StaceyInfo()
-         <3>  30Ð12Ð2002    pc      Use 'STR#' resource instead of faux 'Vers' resource for storing
+         <5>    6â€“7â€“2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
+         <4>  30â€“12â€“2002    pc      Add object version to StaceyInfo()
+         <3>  30â€“12â€“2002    pc      Use 'STR#' resource instead of faux 'Vers' resource for storing
                                     version information used at run-time.
-         <2>  28Ð11Ð2002    pc      Tidy up after initial check in.
-         <1>  28Ð11Ð2002    pc      Initial check in.
+         <2>  28â€“11â€“2002    pc      Tidy up after initial check in.
+         <1>  28â€“11â€“2002    pc      Initial check in.
          
 		 2-Apr-2001:		First implementation.
 */
@@ -29,14 +29,14 @@
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"
 #include "TrialPeriodUtils.h"
 
 #include <math.h>
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char*	kClassName		= "lp.stacey";			// Class name
 
@@ -63,9 +63,9 @@ enum {
 	statArraySize
 	};
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	Object		coreObject;
@@ -90,10 +90,10 @@ typedef struct {
 	} tLStats;
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 	// Class message functions
 void*	StaceyNew(long);
@@ -115,7 +115,7 @@ static void	StaceyInfo(tLStats*);
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Inline Functions
+#pragma mark â€¢ Inline Functions
 
 #pragma mark -
 
@@ -162,7 +162,7 @@ main()
 	}
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -244,7 +244,7 @@ StaceyFree(tLStats* me)
 
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *
@@ -275,7 +275,7 @@ StaceyBang(
 	// Doing this with nested ifs would be just as ugly, if not more so.
 	{
 	double	sum, sum2, sum3,				// Stored values will be copied into registers
-			mean2, mean3,					// Buffer µ^2 and µ^3
+			mean2, mean3,					// Buffer Âµ^2 and Âµ^3
 			var,							// Var is square of Std. Dev
 			kurTemp1, kurTemp2;				// Two temporary terms we use in calculating kurtosis.
 	
@@ -288,12 +288,12 @@ StaceyBang(
 		// Grab some intermediate values
 	sum2	= me->data[statSum2];
 	mean2	= mean * mean;
-		// Variation =  ·((X-µ)^2) / (N - 1)
+		// Variation =  âˆ‘((X-Âµ)^2) / (N - 1)
 		// Use N-1 as denominator for estimate from sample population
 		// (Read up a stat text book for details of why)
 		// Calc numerator first
-		// NB:		·((X-µ)^2)	= ·(X^2 - 2µX + µ^2)
-		//						= ·X^2 - 2µ(·X) + N(µ^2)
+		// NB:		âˆ‘((X-Âµ)^2)	= âˆ‘(X^2 - 2ÂµX + Âµ^2)
+		//						= âˆ‘X^2 - 2Âµ(âˆ‘X) + N(Âµ^2)
 		// Calc nmuerator first. Start with middle term and work out
 	var	= -mean * sum;
 	var += var;								// Addition is always cheaper than "times 2"
@@ -309,10 +309,10 @@ StaceyBang(
 		// Grab some intermediate values
 	sum3	= me->data[statSum3];
 	mean3	= mean * mean2;
-		// Skew = ( ·(X-µ)^3 ) / (N * stdDev^3)
+		// Skew = ( âˆ‘(X-Âµ)^3 ) / (N * stdDev^3)
 		// Calc numerator first...
-		// NB:		·(X-µ)^3	= ·(X^3 - 3µX^2 + 3µ^2X - µ^3)
-		//						= ·X^3 - 3µ(·X^2) + 3µ^2(·X) - Nµ^3
+		// NB:		âˆ‘(X-Âµ)^3	= âˆ‘(X^3 - 3ÂµX^2 + 3Âµ^2X - Âµ^3)
+		//						= âˆ‘X^3 - 3Âµ(âˆ‘X^2) + 3Âµ^2(âˆ‘X) - NÂµ^3
 		// Start with the inner terms
 	skew =  mean2 * sum - mean * sum2;
 	skew += skew + skew;					// Addition is still cheaper than multiply
@@ -323,18 +323,18 @@ StaceyBang(
 	skew /= count * var * stdDev;
 	
 	if (count == 3) goto puntStats;			// Need at least four for kurtosis
-		// Kurtosis = (( ·(X-µ)^4 ) / (N * stdDev^4)) - 3
+		// Kurtosis = (( âˆ‘(X-Âµ)^4 ) / (N * stdDev^4)) - 3
 		// The 3 is a magic normalization constant (cf. those statistic textbooks)
 		// Again, multiply out the numerator:
-		//			·(X-µ)^4	= ·(X^4 - 4µX^3 + 6µ^2X^2 - 4µ^3X + µ^4)
-		//						= ·X^4 - 4µ(·X^3) + 6µ^2(·X^2) - 4µ^3(·X) + Nµ^4
+		//			âˆ‘(X-Âµ)^4	= âˆ‘(X^4 - 4ÂµX^3 + 6Âµ^2X^2 - 4Âµ^3X + Âµ^4)
+		//						= âˆ‘X^4 - 4Âµ(âˆ‘X^3) + 6Âµ^2(âˆ‘X^2) - 4Âµ^3(âˆ‘X) + NÂµ^4
 		// Again, Calc numerator first.
 		// We use two temp variable for the inner terms, again to resolve some
 		// multiplications into additions.
 	kurTemp1 = mean2 * sum2;
 	kurTemp2 = mean * sum3 + mean3 * sum;
 	kurTemp1 += kurTemp1 + kurTemp1 - kurTemp2 - kurTemp2;
-		// ASSERT: kurTemp1 == - 2µ(·X^3) + 3µ^2(·X^2) - 2µ^3(·X)
+		// ASSERT: kurTemp1 == - 2Âµ(âˆ‘X^3) + 3Âµ^2(âˆ‘X^2) - 2Âµ^3(âˆ‘X)
 	kurtosis = me->data[statSum4] + kurTemp1 + kurTemp1 + count * mean2 * mean2;
 		// Was that hard?
 		// Now just divide out the denominator

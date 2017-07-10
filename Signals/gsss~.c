@@ -5,19 +5,19 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2002 Peter Castine
+	Copyright:	Â© 2002 Peter Castine
 
 	Change History (most recent first):
 
-         <8>   26Ð4Ð2006    pc      Update for new LitterLib organization.
-         <7>   23Ð3Ð2006    pc      Use Marsaglia-Bray Gaussian generator
-         <6>     9Ð12Ð04    pc      Update to use inlet_getproxy()
-         <5>     14Ð1Ð04    pc      Update for Windows.
-         <4>    6Ð7Ð2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
-         <3>  30Ð12Ð2002    pc      Drop faux 'Vers' resource and related modifications. Add object
+         <8>   26â€“4â€“2006    pc      Update for new LitterLib organization.
+         <7>   23â€“3â€“2006    pc      Use Marsaglia-Bray Gaussian generator
+         <6>     9â€“12â€“04    pc      Update to use inlet_getproxy()
+         <5>     14â€“1â€“04    pc      Update for Windows.
+         <4>    6â€“7â€“2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
+         <3>  30â€“12â€“2002    pc      Drop faux 'Vers' resource and related modifications. Add object
                                     version to GsssInfo().
-         <2>  28Ð11Ð2002    pc      Tidy up after initial check in.
-         <1>  28Ð11Ð2002    pc      Initial check in.
+         <2>  28â€“11â€“2002    pc      Tidy up after initial check in.
+         <1>  28â€“11â€“2002    pc      Initial check in.
 		30-Jan-2002:	First implementation.
 */
 
@@ -25,7 +25,7 @@
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"	// Also #includes MaxUtils.h, ext.h
 #include "TrialPeriodUtils.h"
@@ -33,7 +33,7 @@
 #include "Taus88.h"
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char*	kClassName		= "lp.gsss~";			// Class name
 
@@ -57,11 +57,11 @@ enum {
 	outletNoise
 	};
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	t_pxobject		coreObject;
@@ -71,11 +71,11 @@ typedef struct {
 	} objGaussNoise;
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
 
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 	// Class message functions
 void*	GsssNew(double, double);
@@ -98,7 +98,7 @@ static int*	GsssPerformDyn(int*);
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Inline Functions
+#pragma mark â€¢ Inline Functions
 
 
 
@@ -149,7 +149,7 @@ main(void)
 
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -186,7 +186,7 @@ punt:
 	}
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *
@@ -272,7 +272,7 @@ void GsssInfo(objGaussNoise* me)
 
 
 #pragma mark -
-#pragma mark ¥ DSP Methods
+#pragma mark â€¢ DSP Methods
 
 /******************************************************************************************
  *
@@ -416,7 +416,7 @@ GsssPerformDyn(
 			} while (--vecCounter > 0);
 		}
 	else {
-		// ASSERT: no signal for µ, but there must be one for Std.Dev.
+		// ASSERT: no signal for Âµ, but there must be one for Std.Dev.
 		double mu = me->mu;
 		do	{
 			*outNoise++ = *sdSig++ * NormalKRTaus88(NIL) + mu;

@@ -7,7 +7,7 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2008 Peter Castine
+	Copyright:	¬© 2008 Peter Castine
 
 	Change History (most recent first):
 
@@ -19,14 +19,14 @@
 		30-Jul-2003:		First implementation.
  ******************************************************************************************/
 
-#pragma mark • Include Files
+#pragma mark ‚Ä¢ Include Files
 
 #include "LitterLib.h"
 #include "TrialPeriodUtils.h"
 #include "MiscUtils.h"
 
 
-#pragma mark • Constants
+#pragma mark ‚Ä¢ Constants
 
 const char	kMaxClassName[]	= "lbj.bixmap",		// Class name for Max, also used
 													// for resources.
@@ -53,11 +53,11 @@ enum {
 	kFilterSize = 256
 	};
 	
-#pragma mark • Data Types
+#pragma mark ‚Ä¢ Data Types
 
 typedef char* CharPtr;					// Should be typedef'd somewhere else ??
 	
-#pragma mark • Object Structure
+#pragma mark ‚Ä¢ Object Structure
 
 typedef struct {
 	Object		coreObject;
@@ -75,7 +75,7 @@ typedef struct {
 
 
 
-#pragma mark • Global Variables
+#pragma mark ‚Ä¢ Global Variables
 
 void*		gJitClassBixMap	= NIL;
 Messlist*	gMaxClassBixMap	= NIL;
@@ -85,7 +85,7 @@ Symbol*		gSymJitBixMap	= NIL;
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark • Inline Functions
+#pragma mark ‚Ä¢ Inline Functions
 
 static inline void* MainOutlet(msobBixMap* me)
 	{ return me->coreObject.o_outlet; }
@@ -93,7 +93,7 @@ static inline void* MainOutlet(msobBixMap* me)
 	
 
 #pragma mark -
-#pragma mark • Jitter Methods
+#pragma mark ‚Ä¢ Jitter Methods
 
 /******************************************************************************************
  *
@@ -216,7 +216,7 @@ BixMapCalcNDim(
 	switch (iDimCount) {
 	case 1:
 		iDimensions[1] = 1;
-		// Fall into next case…
+		// Fall into next case‚Ä¶
 	case 2:
 		n = iDimensions[0];
 		
@@ -542,7 +542,7 @@ BixMapJitInit(void)
 	}
 
 #pragma mark -
-#pragma mark • Max Wrapper Methods
+#pragma mark ‚Ä¢ Max Wrapper Methods
 
 /******************************************************************************************
  *
@@ -627,7 +627,7 @@ static void BixMapInfo(msobBixMap* me)
 
 
 #pragma mark -
-#pragma mark • Entry Point
+#pragma mark ‚Ä¢ Entry Point
 
 /******************************************************************************************
  *

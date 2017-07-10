@@ -2,21 +2,21 @@
 	File:		lya.c
 
 	Contains:	Max external object generating sequences of populations from the classic
-				(chaotic) population growth model: p' <- rápá(1-p)
+				(chaotic) population growth model: p' <- rÂ·pÂ·(1-p)
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2002 Peter Castine
+	Copyright:	Â© 2002 Peter Castine
 
 	Change History (most recent first):
 
-         <6>      5Ð3Ð05    pc      Update for compatibility with CW 8 <cfloat> implementation.
-         <5>     11Ð1Ð04    pc      Update for Windows.
-         <4>    7Ð7Ð2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
-         <3>    6Ð3Ð2003    pc      Drop faux 'Vers' resource and related modifications. Add object
+         <6>      5â€“3â€“05    pc      Update for compatibility with CW 8 <cfloat> implementation.
+         <5>     11â€“1â€“04    pc      Update for Windows.
+         <4>    7â€“7â€“2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
+         <3>    6â€“3â€“2003    pc      Drop faux 'Vers' resource and related modifications. Add object
                                     version to DoInfo().
-         <2>  28Ð11Ð2002    pc      Tidy up after check in.
-         <1>  28Ð11Ð2002    pc      Initial check in.
+         <2>  28â€“11â€“2002    pc      Tidy up after check in.
+         <1>  28â€“11â€“2002    pc      Initial check in.
 		 2-Apr-2002:	Modified inlet order to match poppy~
 		25-Mar-2002:	First implementation.
 */
@@ -25,7 +25,7 @@
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"
 #include "TrialPeriodUtils.h"
@@ -36,7 +36,7 @@
 
 #include <math.h>			// For fabs(), log()
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char	kClassName[]		= "lp.lya";			// Class name
 
@@ -72,11 +72,11 @@ enum {
 	};
 
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	Object			coreObject;
@@ -94,11 +94,11 @@ typedef struct {
 	} tLya;
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
 
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 	// Class message functions
 void*		NewLya(long);
@@ -122,7 +122,7 @@ static Boolean	SetRates(tLya*, short, Atom*);
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Inline Functions
+#pragma mark â€¢ Inline Functions
 
 
 #pragma mark -
@@ -168,7 +168,7 @@ main(void)				// Parameter is obsolete (68k legacy)
 	}
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -250,7 +250,7 @@ FreeLya(
 	
 
 #pragma mark -
-#pragma mark ¥ Helper Functions
+#pragma mark â€¢ Helper Functions
 
 /******************************************************************************************
  *
@@ -435,7 +435,7 @@ punt:
 	}
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *

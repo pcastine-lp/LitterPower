@@ -5,19 +5,19 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2001-2002 Peter Castine
+	Copyright:	Â© 2001-2002 Peter Castine
 
 	Change History (most recent first):
 
-         <2>      4Ð3Ð06    pc      Improve mode calculation at extreme values.
-         <1>     18Ð2Ð06    pc      first checked in.
+         <2>      4â€“3â€“06    pc      Improve mode calculation at extreme values.
+         <1>     18â€“2â€“06    pc      first checked in.
 */
 
 
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"
 #include "TrialPeriodUtils.h"
@@ -31,7 +31,7 @@
 	#include "MoreMath.h"							// MSL on Windows doesn't have lgamma()
 #endif
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char	kClassName[]	= "lp.swamy";			// Class name
 
@@ -60,12 +60,12 @@ enum SpecialCase {
 	};
 
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 typedef enum SpecialCase eSpecialCase;
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	LITTER_CORE_OBJECT(Object, coreObject);
@@ -85,7 +85,7 @@ typedef struct {
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *
@@ -192,7 +192,7 @@ static void SwamySeed(objSwamy* me,long iSeed)
 	{ Taus88Seed(me->tausData, (unsigned long) iSeed); }
 
 #pragma mark -
-#pragma mark ¥ Attribute/Information Functions
+#pragma mark â€¢ Attribute/Information Functions
 
 /******************************************************************************************
  *
@@ -465,7 +465,7 @@ static void SwamyTell(objSwamy* me, Symbol* iTarget, Symbol* iAttrName)
 
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *

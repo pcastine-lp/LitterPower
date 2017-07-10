@@ -5,15 +5,15 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2001-2006 Peter Castine
+	Copyright:	Â© 2001-2006 Peter Castine
 
 	Change History (most recent first):
 
-         <3>   27Ð3Ð2006    pc      Export EvalPoly()
-         <2>   23Ð3Ð2006    pc      Move constants (kPi, etc.) to main LitterLib files. The
+         <3>   27â€“3â€“2006    pc      Export EvalPoly()
+         <2>   23â€“3â€“2006    pc      Move constants (kPi, etc.) to main LitterLib files. The
                                     constants are used in lots of projects that don't need the
                                     heavy-duty math functions.
-         <1>     26Ð2Ð06    pc      First checked in. Split off mathematical functions that had
+         <1>     26â€“2â€“06    pc      First checked in. Split off mathematical functions that had
                                     collected in LitterLib.c
 */
 
@@ -21,41 +21,41 @@
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "MoreMath.h"						// also #includes <math.h>
 #include "LitterLib.h"
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 	
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 
 
-#pragma mark ¥ Static Variables
+#pragma mark â€¢ Static Variables
 
 
 
-#pragma mark ¥ Initialize Global Variables
+#pragma mark â€¢ Initialize Global Variables
 
 
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 
 
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Private & Inline Functions
+#pragma mark â€¢ Private & Inline Functions
 
 
 
 #pragma mark -
-#pragma mark ¥ Factorial, Gamma, and Related Functions
+#pragma mark â€¢ Factorial, Gamma, and Related Functions
 
 /******************************************************************************************
  *
@@ -196,7 +196,7 @@ LogFactorial(
 											// lookup
 	
 	else if (n <= kPrecalc)
-		result = kPrecalcVals[n-2];			// ÁHola! 
+		result = kPrecalcVals[n-2];			// Â¡Hola! 
 	
 	else if (n <= kBruteForce)				// Brute force multiplication is still cheaper
 		result = log( Factorial(n) );		// than adding lots of brute force log()s.

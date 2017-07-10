@@ -6,24 +6,24 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2006 Peter Castine
+	Copyright:	Â© 2006 Peter Castine
 
 	Change History (most recent first):
 
-         <5>     15Ð3Ð06    pc      Add expect message
-         <4>     10Ð2Ð06    pc      Fix bug in MamaRand() that is causing sequence to converge.
-         <3>   10Ð2Ð2006    pc      Fix braindead intialization error in MamaNew(). Good thing we
+         <5>     15â€“3â€“06    pc      Add expect message
+         <4>     10â€“2â€“06    pc      Fix bug in MamaRand() that is causing sequence to converge.
+         <3>   10â€“2â€“2006    pc      Fix braindead intialization error in MamaNew(). Good thing we
                                     tested this on Max 4.1.
-         <2>     10Ð2Ð06    pc      Shaved a few more cycles off the MamaRand() function.
+         <2>     10â€“2â€“06    pc      Shaved a few more cycles off the MamaRand() function.
                                     Incidentally, this might be a candidate for vectorizing.
-         <1>     10Ð2Ð06    pc      first checked in.
+         <1>     10â€“2â€“06    pc      first checked in.
 */
 
 
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"
 #include "TrialPeriodUtils.h"
@@ -31,7 +31,7 @@
 #include "UniformExpectations.h"
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char*	kClassName		= "lp.mama";			// Class name
 
@@ -56,7 +56,7 @@ enum {
 
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	LITTER_CORE_OBJECT(Object, coreObject);
@@ -67,7 +67,7 @@ typedef struct {
 	} objMama;
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
 static UInt16	gPool1[kArraySize],		// Inited at run time
 				gPool2[kArraySize];
@@ -76,7 +76,7 @@ static UInt16	gPool1[kArraySize],		// Inited at run time
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Helper Functions
+#pragma mark â€¢ Helper Functions
 
 /******************************************************************************************
  *
@@ -198,7 +198,7 @@ MamaRand(
 
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -256,7 +256,7 @@ noMoreDefaults:
 	}
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *
@@ -307,7 +307,7 @@ static void MamaSeed(objMama* me, long iSeed)
 
 
 #pragma mark -
-#pragma mark ¥ Attribute/Information Functions
+#pragma mark â€¢ Attribute/Information Functions
 
 /******************************************************************************************
  *

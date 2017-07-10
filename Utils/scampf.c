@@ -5,23 +5,23 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2001-2002 Peter Castine
+	Copyright:	Â© 2001-2002 Peter Castine
 
 	Change History (most recent first):
 
-         <9>      9Ð1Ð06    pc      Correct some fibs in ScampTattle(). Update to use
+         <9>      9â€“1â€“06    pc      Correct some fibs in ScampTattle(). Update to use
                                     LitterAssistResFrag().
-         <8>     14Ð1Ð04    pc      Fix assistance strings.
-         <7>     10Ð1Ð04    pc      Update for modified LitterInit()
-         <6>      8Ð1Ð04    pc      Update for Windows.
-         <5>   30Ð3Ð2003    pc      Adapt for new scampi/scampf/scamp~ architecture. Add
+         <8>     14â€“1â€“04    pc      Fix assistance strings.
+         <7>     10â€“1â€“04    pc      Update for modified LitterInit()
+         <6>      8â€“1â€“04    pc      Update for Windows.
+         <5>   30â€“3â€“2003    pc      Adapt for new scampi/scampf/scamp~ architecture. Add
                                     map/pow/exp/lin messages and initialization arguments. Migrate
                                     to new LitterInfo() call.
-         <4>  30Ð12Ð2002    pc      Add object version to DoInfo()
-         <3>  30Ð12Ð2002    pc      Use 'STR#' resource instead of faux 'Vers' resource for storing
+         <4>  30â€“12â€“2002    pc      Add object version to DoInfo()
+         <3>  30â€“12â€“2002    pc      Use 'STR#' resource instead of faux 'Vers' resource for storing
                                     version information used at run-time.
-         <2>  28Ð11Ð2002    pc      Tidy up after initial check in.
-         <1>  28Ð11Ð2002    pc      Initial check in.
+         <2>  28â€“11â€“2002    pc      Tidy up after initial check in.
+         <1>  28â€“11â€“2002    pc      Initial check in.
 		15-Apr-2001:		First implementation.
 */
 
@@ -29,13 +29,13 @@
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "scampLib.h"
 #include "TrialPeriodUtils.h"
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 #if (SCAMP_TARGET == SCAMPI)
 	const char		kClassName[]	= "lp.scampi";			// Class name
@@ -69,13 +69,13 @@ enum {
 	};
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
 
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Inline Functions
+#pragma mark â€¢ Inline Functions
 
 #pragma mark -
 
@@ -146,7 +146,7 @@ main()
 
 
 #pragma mark -
-#pragma mark ¥ Instantiation
+#pragma mark â€¢ Instantiation
 
 /******************************************************************************************
  *
@@ -236,7 +236,7 @@ punt:
 
 	
 #pragma mark -
-#pragma mark ¥ Calculation Methods
+#pragma mark â€¢ Calculation Methods
 
 /******************************************************************************************
  *
@@ -419,7 +419,7 @@ ScampSet(
 
 
 #pragma mark -
-#pragma mark ¥ Split Message
+#pragma mark â€¢ Split Message
 
 /******************************************************************************************
  *
@@ -467,7 +467,7 @@ ScampSplit(
 
 
 #pragma mark -
-#pragma mark ¥ Rounding messages
+#pragma mark â€¢ Rounding messages
 /******************************************************************************************
  *
  *	ScampRound(me);
@@ -488,7 +488,7 @@ ScampSplit(
 
 
 #pragma mark -
-#pragma mark ¥ Information Messaages
+#pragma mark â€¢ Information Messaages
 
 /******************************************************************************************
  *

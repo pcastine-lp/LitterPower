@@ -6,17 +6,17 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2003-2005 Peter Castine
+	Copyright:	Â© 2003-2005 Peter Castine
 
 	Change History (most recent first):
 
-        <3+>   19Ð6Ð2006    pc      Correct problem in calculating stride component in non-char
+        <3+>   19â€“6â€“2006    pc      Correct problem in calculating stride component in non-char
                                     matrices
-         <3>    8Ð5Ð2006    pc      Update for new LitterLib organization. In particular use inlined
+         <3>    8â€“5â€“2006    pc      Update for new LitterLib organization. In particular use inlined
                                     Taus88 for speed improvements.
-         <2>   12Ð8Ð2005    pc      Optimize for char data (Taus88 gives us four bytes on each
+         <2>   12â€“8â€“2005    pc      Optimize for char data (Taus88 gives us four bytes on each
                                     call).
-         <1>      5Ð3Ð05    pc      Initial check in.
+         <1>      5â€“3â€“05    pc      Initial check in.
 */
 
 
@@ -27,7 +27,7 @@
 		
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"
 #include "TrialPeriodUtils.h"
@@ -35,7 +35,7 @@
 #include "Taus88.h"
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char	kMaxClassName[]		= "lbj.shhh",			// Class name for Max
 			kJitClassName[]		= "lbj-shhh";			// Class name for Jitter
@@ -55,11 +55,11 @@ enum {
 	};
 
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	Object		coreObject;
@@ -75,7 +75,7 @@ typedef struct {
 	} jcobShhh;							// Jitter Core Object
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
 void*			gShhhJitClass	= NIL;
 Messlist*		gMaxShhhClass	= NIL;
@@ -83,7 +83,7 @@ Messlist*		gMaxShhhClass	= NIL;
 unsigned long	gModDate		= 0;
 */
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 	// Max methods/functions
 static void*ShhhNewMaxShell	(Symbol*, long, Atom*);
@@ -104,7 +104,7 @@ static t_jit_err ShhhJitInit		(void);
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Inline Functions
+#pragma mark â€¢ Inline Functions
 
 /******************************************************************************************
  *
@@ -283,11 +283,11 @@ main(void)
 
 
 #pragma mark -
-#pragma mark ¥ Internal functions
+#pragma mark â€¢ Internal functions
 
 
 #pragma mark -
-#pragma mark ¥ Max Shell Methods
+#pragma mark â€¢ Max Shell Methods
 
 /******************************************************************************************
  *
@@ -420,7 +420,7 @@ void ShhhAssist(msobShhh* me, void* box, long iDir, long iArgNum, char* oCStr)
 
 
 #pragma mark -
-#pragma mark ¥ Jitter Methods
+#pragma mark â€¢ Jitter Methods
 
 /******************************************************************************************
  *

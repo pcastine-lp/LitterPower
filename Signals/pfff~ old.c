@@ -6,18 +6,18 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2001-2002 Peter Castine
+	Copyright:	Â© 2001-2002 Peter Castine
 
 	Change History (most recent first):
 
-         <7>   24Ð3Ð2006    pc      Update #includes for new LitterLib organization.
-         <6>     14Ð1Ð04    pc      Update for Windows.
-         <5>    6Ð7Ð2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
-         <4>  30Ð12Ð2002    pc      Drop faux 'Vers' resource and related modifications. Add object
+         <7>   24â€“3â€“2006    pc      Update #includes for new LitterLib organization.
+         <6>     14â€“1â€“04    pc      Update for Windows.
+         <5>    6â€“7â€“2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
+         <4>  30â€“12â€“2002    pc      Drop faux 'Vers' resource and related modifications. Add object
                                     version to PvvvInfo().
-         <3>  29Ð12Ð2002    pc      Update parameters for #pragma __ide_target()
-         <2>  28Ð11Ð2002    pc      Tidy up after initial check in.
-         <1>  28Ð11Ð2002    pc      Initial check in.
+         <3>  29â€“12â€“2002    pc      Update parameters for #pragma __ide_target()
+         <2>  28â€“11â€“2002    pc      Tidy up after initial check in.
+         <1>  28â€“11â€“2002    pc      Initial check in.
 		 8-Feb-2000:	Added support for variable Hurst factor (lp.pvvv~)
 		14-Apr-2000:	First implementation.
 */
@@ -26,7 +26,7 @@
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Identify Target
+#pragma mark â€¢ Identify Target
 
 #ifdef __MWERKS__
 	// With Metrowerks CodeWarrior make use of the __ide_target() preprocessor function
@@ -53,7 +53,7 @@
 	#endif
 #endif
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include <stdlib.h>		// For rand(), RAND_MAX
 
@@ -65,7 +65,7 @@
 #include "z_dsp.h"
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 #if		defined(__BROWN__)
 	const char*	kClassName		= "lp.pfff~";			// Class name
@@ -122,11 +122,11 @@ enum {
 	outletBrown
 	};
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	t_pxobject		coreObject;
@@ -144,11 +144,11 @@ typedef struct {
 	} tBrown;
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
 
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 	// Class message functions
 #ifdef __VARICOLOR__
@@ -174,7 +174,7 @@ static int*	PvvvPerform(int*);
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Inline Functions
+#pragma mark â€¢ Inline Functions
 
 
 
@@ -233,7 +233,7 @@ main(void)
 
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -279,7 +279,7 @@ PvvvNew(
 	}
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *
@@ -377,7 +377,7 @@ void PvvvInfo(tBrown* me)
 
 
 #pragma mark -
-#pragma mark ¥ DSP Methods
+#pragma mark â€¢ DSP Methods
 
 /******************************************************************************************
  *

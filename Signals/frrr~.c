@@ -5,20 +5,20 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2001-2002 Peter Castine
+	Copyright:	Â© 2001-2002 Peter Castine
 
 	Change History (most recent first):
 
-         <7>   26Ð4Ð2006    pc      Update for new LitterLib organization.
-         <6>   12Ð3Ð2005    pc      Handle int messages coming in the left inlet. Tip o' the hat to
+         <7>   26â€“4â€“2006    pc      Update for new LitterLib organization.
+         <6>   12â€“3â€“2005    pc      Handle int messages coming in the left inlet. Tip o' the hat to
                                     the persons responsible for changing Max behavior and not
                                     documenting that this sort of thing is necessary.
-         <5>     14Ð1Ð04    pc      Update for Windows.
-         <4>    6Ð7Ð2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
-         <3>  30Ð12Ð2002    pc      Drop faux 'Vers' resource and related modifications. Add object
+         <5>     14â€“1â€“04    pc      Update for Windows.
+         <4>    6â€“7â€“2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
+         <3>  30â€“12â€“2002    pc      Drop faux 'Vers' resource and related modifications. Add object
                                     version to FrrrInfo().
-         <2>  28Ð11Ð2002    pc      Tidy up after initial check in.
-         <1>  28Ð11Ð2002    pc      Initial check in.
+         <2>  28â€“11â€“2002    pc      Tidy up after initial check in.
+         <1>  28â€“11â€“2002    pc      Initial check in.
 		 9-Feb-2002:	Tested Global Optimization Level 4. Surprisingly, the result seems,
 		 				if anything, a little slower than Level 0.
 		14-Apr-2000:	First implementation.
@@ -28,7 +28,7 @@
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 
 #include "LitterLib.h"	// Also #includes MaxUtils.h, ext.h
@@ -38,7 +38,7 @@
 
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char*	kClassName		= "lp.frrr~";			// Class name
 
@@ -70,11 +70,11 @@ enum Interpolation {
 
 	
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 typedef enum Interpolation	tInterp;
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	t_pxobject		coreObject;
@@ -93,11 +93,11 @@ typedef struct {
 	} objLoFreq;
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
 
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 	// Class message functions
 void*	FrrrNew(double, long);
@@ -118,7 +118,7 @@ static int*	FrrrPerform(int*);
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Inline Functions
+#pragma mark â€¢ Inline Functions
 
 static inline double ValidateFreq(double iFreq)
 	{ return iFreq < kFloatEpsilon ? kFloatEpsilon :  iFreq; }
@@ -190,7 +190,7 @@ main(void)
 
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -245,7 +245,7 @@ noMoreDefaults:
 	}
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *
@@ -418,7 +418,7 @@ void FrrrInfo(objLoFreq* me)
 
 
 #pragma mark -
-#pragma mark ¥ DSP Methods
+#pragma mark â€¢ DSP Methods
 
 /******************************************************************************************
  *
@@ -482,8 +482,8 @@ FrrrDSP(
 			if (sampsThisTime > iVecSize)
 				sampsThisTime = iVecSize;
 			
-				// ASSERT:	sampsThisTime ² iVecSize
-				// 			sampsThisTime ² sampsToGo
+				// ASSERT:	sampsThisTime â‰¤ iVecSize
+				// 			sampsThisTime â‰¤ sampsToGo
 			iVecSize -= sampsThisTime;
 			sampsToGo -= sampsThisTime;
 			
@@ -524,8 +524,8 @@ FrrrDSP(
 			if (sampsThisTime > iVecSize)
 				sampsThisTime = iVecSize;
 			
-				// ASSERT:	sampsThisTime ² iVecSize
-				// 			sampsThisTime ² sampsToGo
+				// ASSERT:	sampsThisTime â‰¤ iVecSize
+				// 			sampsThisTime â‰¤ sampsToGo
 			iVecSize -= sampsThisTime;
 			sampsToGo -= sampsThisTime;
 			
@@ -575,8 +575,8 @@ FrrrDSP(
 			if (sampsThisTime > iVecSize)
 				sampsThisTime = iVecSize;
 			
-				// ASSERT:	sampsThisTime ² iVecSize
-				// 			sampsThisTime ² sampsToGo
+				// ASSERT:	sampsThisTime â‰¤ iVecSize
+				// 			sampsThisTime â‰¤ sampsToGo
 			iVecSize -= sampsThisTime;
 			sampsToGo -= sampsThisTime;
 			

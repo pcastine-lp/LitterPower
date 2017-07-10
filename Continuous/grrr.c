@@ -6,18 +6,18 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2001-2002 Peter Castine
+	Copyright:	Â© 2001-2002 Peter Castine
 
 	Change History (most recent first):
 
-         <7>   26Ð4Ð2006    pc      Update for new LitterLib organization.
-         <6>     15Ð1Ð04    pc      Avoid possible memory leak if seed argument is used.
-         <5>     14Ð1Ð04    pc      Update for Windows.
-         <4>    7Ð7Ð2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
-         <3>  30Ð12Ð2002    pc      Drop faux 'Vers' resource and related modifications. Add object
+         <7>   26â€“4â€“2006    pc      Update for new LitterLib organization.
+         <6>     15â€“1â€“04    pc      Avoid possible memory leak if seed argument is used.
+         <5>     14â€“1â€“04    pc      Update for Windows.
+         <4>    7â€“7â€“2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
+         <3>  30â€“12â€“2002    pc      Drop faux 'Vers' resource and related modifications. Add object
                                     version to DoInfo().
-         <2>  28Ð11Ð2002    pc      Tidy up after initial check-in.
-         <1>  28Ð11Ð2002    pc      Initial check in.
+         <2>  28â€“11â€“2002    pc      Tidy up after initial check-in.
+         <1>  28â€“11â€“2002    pc      Initial check in.
 		30-Jun-2001:	Modified to use Taus88 instead of TT800 as default generator.
 						Also update to use new ULong2Unitxx() functions.
 		15-Apr-2000:	First implementation.
@@ -27,7 +27,7 @@
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"
 #include "TrialPeriodUtils.h"
@@ -35,7 +35,7 @@
 #include "Taus88.h"
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char*	kClassName		= "lp.grrr";			// Class name
 
@@ -49,11 +49,11 @@ enum {
 	};
 
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	Object			coreObject;
@@ -64,11 +64,11 @@ typedef struct {
 	} tGray;
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
 
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 	// Class message functions
 void*	GrrrNew	(long);
@@ -85,7 +85,7 @@ static void	GrrrInfo	(tGray*);
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Inline Functions
+#pragma mark â€¢ Inline Functions
 
 
 
@@ -132,7 +132,7 @@ main(void)
 
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -179,7 +179,7 @@ GrrrNew(
 	}
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *

@@ -5,23 +5,23 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2001-2002 Peter Castine
+	Copyright:	Â© 2001-2002 Peter Castine
 
 	Change History (most recent first):
 
-        <11>    8Ð5Ð2006    pc      Fix name conflict between the global enum Symmetry and the
+        <11>    8â€“5â€“2006    pc      Fix name conflict between the global enum Symmetry and the
                                     mapping enum Symmetry (now eMapSym)
-        <10>      9Ð1Ð06    pc      Update to use LitterAssistResFrag().
-         <9>      8Ð9Ð04    pc      Fix bug in LitterAssist found by Holland Hopson.
-         <8>     10Ð1Ð04    pc      Update for modified LitterInit()
-         <7>      8Ð1Ð04    pc      Update for Windows.
-         <6>    6Ð7Ð2003    pc      Sort out default range/symmetry.
-         <5>    9Ð4Ð2003    pc      Add STR# resource for LitterAddClass(). Bump version number.
-         <4>  30Ð12Ð2002    pc      Add object version to DoInfo()
-         <3>  30Ð12Ð2002    pc      Use 'STR#' resource instead of faux 'Vers' resource for storing
+        <10>      9â€“1â€“06    pc      Update to use LitterAssistResFrag().
+         <9>      8â€“9â€“04    pc      Fix bug in LitterAssist found by Holland Hopson.
+         <8>     10â€“1â€“04    pc      Update for modified LitterInit()
+         <7>      8â€“1â€“04    pc      Update for Windows.
+         <6>    6â€“7â€“2003    pc      Sort out default range/symmetry.
+         <5>    9â€“4â€“2003    pc      Add STR# resource for LitterAddClass(). Bump version number.
+         <4>  30â€“12â€“2002    pc      Add object version to DoInfo()
+         <3>  30â€“12â€“2002    pc      Use 'STR#' resource instead of faux 'Vers' resource for storing
                                     version information used at run-time.
-         <2>  28Ð11Ð2002    pc      Tidy up after initial check in.
-         <1>  28Ð11Ð2002    pc      Initial check in.
+         <2>  28â€“11â€“2002    pc      Tidy up after initial check in.
+         <1>  28â€“11â€“2002    pc      Initial check in.
 */
 
 
@@ -30,12 +30,12 @@
 		7-July-2001:	First implementation.
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "scampLib.h"
 #include "TrialPeriodUtils.h"
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char	kClassName[]	= "lp.scamp~";	    		// Class name
 
@@ -75,7 +75,7 @@ enum {
 	};
 
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 	// MSP message functions
 #ifdef __MAX_MSP_OBJECT__
@@ -89,7 +89,7 @@ int*	ScampPerformDynamic(int*);
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Inline Functions
+#pragma mark â€¢ Inline Functions
 
 #pragma mark -
 
@@ -136,7 +136,7 @@ main(void)
 
 
 #pragma mark -
-#pragma mark ¥ Instantiation
+#pragma mark â€¢ Instantiation
 
 /******************************************************************************************
  *
@@ -208,7 +208,7 @@ punt:
 	
 
 #pragma mark -
-#pragma mark ¥ Utilities
+#pragma mark â€¢ Utilities
 
 /******************************************************************************************
  *
@@ -355,7 +355,7 @@ static double Exponent(double iVal, double iBase)
 	{ return iVal * pow(iBase, iVal - 1.0); }
 
 #pragma mark -
-#pragma mark ¥ Object Methods
+#pragma mark â€¢ Object Methods
 
 /******************************************************************************************
  *
@@ -464,7 +464,7 @@ ScampAssist(
 	
 
 #pragma mark -
-#pragma mark ¥ DSP Methods
+#pragma mark â€¢ DSP Methods
 
 /******************************************************************************************
  *
