@@ -6,11 +6,11 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2001-2006 Peter Castine
+	Copyright:	Â© 2001-2006 Peter Castine
 
 	Change History (most recent first):
 
-         <1>     16Ð3Ð06    pc      first checked in.
+         <1>     16â€“3â€“06    pc      first checked in.
 */
 
 
@@ -20,37 +20,37 @@
 	Cheng, R. C. H., Generating Beta Variates with Non-integral Shape Parameters, Comm. ACM,
 	21, 317-322 (1978). (Algorithms BB and BC).
 	
-	Jšhnk, M.D., Erzeugung von Betaverteilten und Gammaverteilten Zufallszahlen," Metrika,
+	JÃ¶hnk, M.D., Erzeugung von Betaverteilten und Gammaverteilten Zufallszahlen," Metrika,
 	vol 8 pp.5-15, 1964.
 	 
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "RNGDistBeta.h"				// Also include MiscUtils.h
 
 //#include <math.h>				// For log(), cos(), etc.
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 	
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 
-#pragma mark ¥ Static (Private) Variables
+#pragma mark â€¢ Static (Private) Variables
 
 
-#pragma mark ¥ Initialize Global Variables
+#pragma mark â€¢ Initialize Global Variables
 
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 
 
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
-#pragma mark ¥ Functions
+#pragma mark â€¢ Functions
 
 /******************************************************************************************
  *

@@ -7,7 +7,7 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2001-2008 Peter Castine
+	Copyright:	Â© 2001-2008 Peter Castine
 
 	Change History (most recent first):
 
@@ -17,7 +17,7 @@
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include <stdlib.h>		// For rand(), RAND_MAX
 
@@ -29,7 +29,7 @@
 #include "z_dsp.h"
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char*	kClassName		= "lp.qvvv~";			// Class name
 
@@ -55,11 +55,11 @@ enum {
 	};
 
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	t_pxobject		coreObject;
@@ -78,11 +78,11 @@ typedef struct {
 	} objBrown;
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
 
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 	// Class message functions
 void*	Pvvv2New(double, double);
@@ -107,7 +107,7 @@ static int*	Pvvv2Perform(int*);
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Inline Functions
+#pragma mark â€¢ Inline Functions
 
 
 
@@ -169,7 +169,7 @@ main(void)
 
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -218,7 +218,7 @@ Pvvv2New(
 	}
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *
@@ -375,7 +375,7 @@ void Pvvv2Info(objBrown* me)
 
 
 #pragma mark -
-#pragma mark ¥ DSP Methods
+#pragma mark â€¢ DSP Methods
 
 /******************************************************************************************
  *

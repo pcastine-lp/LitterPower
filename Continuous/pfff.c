@@ -6,22 +6,22 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2001-2002 Peter Castine
+	Copyright:	Â© 2001-2002 Peter Castine
 
 	Change History (most recent first):
 
-         <9>   26Ð4Ð2006    pc      Update for new LitterLib organization.
-         <8>   24Ð6Ð2005    pc      Correcteded order of argXXX enumeration, putting Hurst factor
+         <9>   26â€“4â€“2006    pc      Update for new LitterLib organization.
+         <8>   24â€“6â€“2005    pc      Correcteded order of argXXX enumeration, putting Hurst factor
                                     before NN.
-         <7>     15Ð1Ð04    pc      Avoid possible memory leak if seed argument is used.
-         <6>     14Ð1Ð04    pc      Update for Windows.
-         <5>    7Ð7Ð2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
-         <4>  30Ð12Ð2002    pc      Drop faux 'Vers' resource and related modifications. Add object
+         <7>     15â€“1â€“04    pc      Avoid possible memory leak if seed argument is used.
+         <6>     14â€“1â€“04    pc      Update for Windows.
+         <5>    7â€“7â€“2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
+         <4>  30â€“12â€“2002    pc      Drop faux 'Vers' resource and related modifications. Add object
                                     version to DoInfo().
-         <3>  29Ð12Ð2002    pc      Update parameters to __ide_target() to match new Classic/Carbon
+         <3>  29â€“12â€“2002    pc      Update parameters to __ide_target() to match new Classic/Carbon
                                     target naming conventions
-         <2>  28Ð11Ð2002    pc      Tidy up after initial check-in.
-         <1>  28Ð11Ð2002    pc      Initial check in.
+         <2>  28â€“11â€“2002    pc      Tidy up after initial check-in.
+         <1>  28â€“11â€“2002    pc      Initial check in.
 		 9-Feb-2000:	Added support for variable Hurst factor (lp.pvvv)
 		30-Jun-2001:	Modified to use Taus88 instead of TT800 as default generator.
 						Also update to use new ULong2Unitxx() functions.
@@ -33,7 +33,7 @@
  ******************************************************************************************/
 
 
-#pragma mark ¥ Identify Target
+#pragma mark â€¢ Identify Target
 
 #ifdef __MWERKS__
 	// With Metrowerks CodeWarrior make use of the __ide_target() preprocessor function
@@ -57,7 +57,7 @@
 	#endif
 #endif
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"
 #include "TrialPeriodUtils.h"
@@ -66,7 +66,7 @@
 #include "RNGGauss.h"
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 #if		defined(BROWN)
 	const char*	kClassName		= "lp.pfff";			// Class name
@@ -96,11 +96,11 @@ enum {
 	};
 
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	Object			coreObject;
@@ -122,11 +122,11 @@ typedef struct {
 	} tBrown;
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
 
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 	// Class message functions
 static void*	PvvvNew(Symbol*, short, Atom[]);
@@ -147,7 +147,7 @@ static void	PvvvInfo(tBrown*);
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Inline Functions
+#pragma mark â€¢ Inline Functions
 
 
 
@@ -174,7 +174,7 @@ main(void)
 			sizeof(tBrown),				// Class object size
 			NIL,						// No menu function
 			A_GIMME,					// Optional arguments:	1. Cycle (must be 2^n)
-										//						2. Hurst Factor (0 ² h ² 1)
+										//						2. Hurst Factor (0 â‰¤ h â‰¤ 1)
 										//						3. NN Factor
 										// 						4. Seed value
 			0);							// Unfortunately, Max won't parse this argument list
@@ -204,7 +204,7 @@ main(void)
 
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -388,7 +388,7 @@ PvvvFree(
 
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *

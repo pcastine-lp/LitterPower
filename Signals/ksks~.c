@@ -5,26 +5,26 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2004 Peter Castine
+	Copyright:	Â© 2004 Peter Castine
 
 	Change History (most recent first):
 
-         <2>   26Ð4Ð2006    pc      Update for new LitterLib organization.
-         <1>     5Ð11Ð04    pc      first checked in.
+         <2>   26â€“4â€“2006    pc      Update for new LitterLib organization.
+         <1>     5â€“11â€“04    pc      first checked in.
 */
 
 
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"	// Also #includes MaxUtils.h, ext.h
 #include "TrialPeriodUtils.h"
 #include "Taus88.h"
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char*	kClassName		= "lp.ksks~";		// Class name
 
@@ -71,11 +71,11 @@ enum eFlags {
 	};
 
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	t_pxobject	coreObject;
@@ -102,11 +102,11 @@ typedef struct {
 	} objPluck;						// element at end of buffer.
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
 
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 	// Class message functions
 void*	PluckNew(double, double, double);
@@ -128,7 +128,7 @@ static int*	PluckPerform(int*);
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Inline Functions
+#pragma mark â€¢ Inline Functions
 
 
 
@@ -181,7 +181,7 @@ main(void)
 	}
 
 #pragma mark -
-#pragma mark ¥ Utility functions
+#pragma mark â€¢ Utility functions
 
 /******************************************************************************************
  *
@@ -299,7 +299,7 @@ SetBlend(
 	}
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -347,7 +347,7 @@ PluckNew(
 	}
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 
 
@@ -452,7 +452,7 @@ void PluckInfo(objPluck* me)
 
 
 #pragma mark -
-#pragma mark ¥ DSP Methods
+#pragma mark â€¢ DSP Methods
 
 /******************************************************************************************
  *

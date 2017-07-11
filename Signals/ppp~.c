@@ -6,17 +6,17 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2001-2002 Peter Castine
+	Copyright:	Â© 2001-2002 Peter Castine
 
 	Change History (most recent first):
 
-         <6>   26Ð4Ð2006    pc      Update for new LitterLib organization.
-         <5>     14Ð1Ð04    pc      Update for Windows.
-         <4>    6Ð7Ð2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
-         <3>  30Ð12Ð2002    pc      Drop faux 'Vers' resource and related modifications. Add object
+         <6>   26â€“4â€“2006    pc      Update for new LitterLib organization.
+         <5>     14â€“1â€“04    pc      Update for Windows.
+         <4>    6â€“7â€“2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
+         <3>  30â€“12â€“2002    pc      Drop faux 'Vers' resource and related modifications. Add object
                                     version to PppInfo().
-         <2>  28Ð11Ð2002    pc      Tidy up after initial check in.
-         <1>  28Ð11Ð2002    pc      Initial check in.
+         <2>  28â€“11â€“2002    pc      Tidy up after initial check in.
+         <1>  28â€“11â€“2002    pc      Initial check in.
 		 9-Feb-2002:	Tested this with different optimization levels in MW C.
 		 				Global Optimization Level 1 was marginally faster than Level 0
 		 				Level 2 appeared to be slower (!). Level 3 causes lp.ppp~ to freeze
@@ -28,7 +28,7 @@
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"	// Also #includes MaxUtils.h, ext.h
 #include "TrialPeriodUtils.h"
@@ -36,7 +36,7 @@
 #include "Taus88.h"
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char*	kClassName		= "lp.ppp~";			// Class name
 
@@ -56,11 +56,11 @@ enum {
 	outletPop
 	};
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	t_pxobject		coreObject;
@@ -79,7 +79,7 @@ typedef struct {
 	} tPop;
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
 
 SymbolPtr	gSymSymbol	= NIL,
@@ -87,7 +87,7 @@ SymbolPtr	gSymSymbol	= NIL,
 			gPosSymbol	= NIL,
 			gNullSymbol	= NIL;
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 	// Class message functions
 void*	PppNew(double, long, Symbol*);
@@ -112,7 +112,7 @@ static void PppCalcNext(tPop*);
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Inline Functions
+#pragma mark â€¢ Inline Functions
 
 
 
@@ -175,7 +175,7 @@ main(void)
 
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -244,7 +244,7 @@ noMoreDefaults:
 	}
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *
@@ -357,7 +357,7 @@ void PppInfo(tPop* me)
 
 
 #pragma mark -
-#pragma mark ¥ DSP Methods
+#pragma mark â€¢ DSP Methods
 
 /******************************************************************************************
  *
@@ -583,8 +583,8 @@ PppPerform(
 			if (sampsThisTime > vecCounter)
 				sampsThisTime = vecCounter;
 			
-				// ASSERT:	0 < sampsThisTime ² vecCounter
-				// 			0 < sampsThisTime ² sampsToNext
+				// ASSERT:	0 < sampsThisTime â‰¤ vecCounter
+				// 			0 < sampsThisTime â‰¤ sampsToNext
 			vecCounter	-= sampsThisTime;
 			sampsToNext	-= sampsThisTime;
 			

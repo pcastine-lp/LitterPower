@@ -5,20 +5,20 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2001-2002 Peter Castine
+	Copyright:	Â© 2001-2002 Peter Castine
 
 	Change History (most recent first):
 
-         <9>   26Ð4Ð2006    pc      Renamed LitterLib files for Binomial distribution
-         <8>      4Ð3Ð06    pc      Add expect message. Massive performance improvements
-         <7>     15Ð1Ð04    pc      Avoid possible memory leak if seed argument is used.
-         <6>     14Ð1Ð04    pc      Try to grab Mac resources inside Windows DLL.
-         <5>   8Ð16Ð2003    pc      Update for Windows.
-         <4>    7Ð7Ð2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
-         <3>  30Ð12Ð2002    pc      Drop faux 'Vers' resource and related modifications. Add object
+         <9>   26â€“4â€“2006    pc      Renamed LitterLib files for Binomial distribution
+         <8>      4â€“3â€“06    pc      Add expect message. Massive performance improvements
+         <7>     15â€“1â€“04    pc      Avoid possible memory leak if seed argument is used.
+         <6>     14â€“1â€“04    pc      Try to grab Mac resources inside Windows DLL.
+         <5>   8â€“16â€“2003    pc      Update for Windows.
+         <4>    7â€“7â€“2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
+         <3>  30â€“12â€“2002    pc      Drop faux 'Vers' resource and related modifications. Add object
                                     version to DoInfo().
-         <2>  28Ð11Ð2002    pc      Tidy up after initial check in.
-         <1>  28Ð11Ð2002    pc      Initial Check-In.
+         <2>  28â€“11â€“2002    pc      Tidy up after initial check in.
+         <1>  28â€“11â€“2002    pc      Initial Check-In.
 		30-Jun-2001:	Modified to use Taus88 instead of TT800 as default generator.
 		12-Apr-2001:	Binary choice object integrated into this object
 		4-Apr-2001:		First implementation.
@@ -28,14 +28,14 @@
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"
 #include "TrialPeriodUtils.h"
 #include "Taus88.h"
 #include "RNGBinomial.h"
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char*		kClassName		= "lp.bernie";		// Class name
 
@@ -62,7 +62,7 @@ enum Generator {								// How to generate deviates
 	};
 
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 typedef enum Generator eGenerator;
 
@@ -72,7 +72,7 @@ typedef union genParams {
 	tBTPEParams	btpeStuff;
 	} uGenParams;
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	Object			coreObject;
@@ -86,11 +86,11 @@ typedef struct {
 	} objBernie;
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
 
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 	// Class message functions
 void*	BernieNew	(long, double, long);
@@ -116,7 +116,7 @@ static void	BernieInfo	(objBernie*);
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Inline Functions
+#pragma mark â€¢ Inline Functions
 
 
 
@@ -171,7 +171,7 @@ main(void)
 
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -224,7 +224,7 @@ BernieNew(
 	}
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *

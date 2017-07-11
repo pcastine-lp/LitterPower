@@ -5,7 +5,7 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2006 Peter Castine
+	Copyright:	Â© 2006 Peter Castine
 
 	Change History (most recent first):
 
@@ -16,7 +16,7 @@
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"
 #include "TrialPeriodUtils.h"
@@ -24,7 +24,7 @@
 #include "RNGBinomial.h"
 #include "RNGDistBeta.h"
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char*		kClassName		= "lp.bibi";		// Class name
 
@@ -54,7 +54,7 @@ enum binomGen {							// How to generate deviates
 
 
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 typedef enum binomGen eBinomAlg;
 
@@ -65,7 +65,7 @@ typedef union betaParams {
 			} uBetaParams;
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	LITTER_CORE_OBJECT(Object, coreObject);
@@ -84,7 +84,7 @@ typedef struct {
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *
@@ -298,7 +298,7 @@ static void BibiSeed(objBibi* me, long iSeed)
 	{ if (me->tausData) Taus88Seed(me->tausData, (UInt32) iSeed); }
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -377,7 +377,7 @@ static void BibiFree(objBibi* me)
 
 
 #pragma mark -
-#pragma mark ¥ Attribute/Information Functions
+#pragma mark â€¢ Attribute/Information Functions
 
 /******************************************************************************************
  *
@@ -413,7 +413,7 @@ BibiTattle(
 		post("    'arc sine'");
 		break;
 	case algJoehnk:
-		post("    using Jšhnk algorithm");
+		post("    using JÃ¶hnk algorithm");
 		break;
 	case algChengBB:
 		post("    using Cheng BB algorithm");

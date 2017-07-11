@@ -6,19 +6,19 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2004-08 Peter Castine
+	Copyright:	Â© 2004-08 Peter Castine
 
 	Change History (most recent first):
 
-         <2>     15Ð3Ð06    pc      Add expect message
-         <1>     13Ð8Ð04    pc      First implementation.
+         <2>     15â€“3â€“06    pc      Add expect message
+         <1>     13â€“8â€“04    pc      First implementation.
 */
 
 
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"
 #include "TrialPeriodUtils.h"
@@ -26,7 +26,7 @@
 #include "UniformExpectations.h"
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char*	kClassName		= "lp.mrmr";			// Class name
 
@@ -49,11 +49,11 @@ enum {
 	kArrayBreakPt	= 397
 	};
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	LITTER_CORE_OBJECT(Object, coreObject);
@@ -63,7 +63,7 @@ typedef struct {
 	} objMersenne;
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
 static UInt32	gMTData[kArraySize];		// Inited at run time
 static int		gMTIndex = 0;
@@ -72,7 +72,7 @@ static int		gMTIndex = 0;
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -196,7 +196,7 @@ noMoreDefaults:
 	}
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *
@@ -248,7 +248,7 @@ static void MrmrSeed(objMersenne* me, long iSeed)
 
 
 #pragma mark -
-#pragma mark ¥ Attribute/Information Functions
+#pragma mark â€¢ Attribute/Information Functions
 
 /******************************************************************************************
  *

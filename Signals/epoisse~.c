@@ -5,24 +5,24 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2001-2002 Peter Castine
+	Copyright:	Â© 2001-2002 Peter Castine
 
 	Change History (most recent first):
 
-         <5>   26Ð4Ð2006    pc      Update for new LitterLib organization.
-         <4>   23Ð3Ð2006    pc      Minor updates
-         <3>    14Ð10Ð04    pc      Update to new object name
-         <2>     20Ð3Ð04    pc      Work on first implementation. All v1 features
+         <5>   26â€“4â€“2006    pc      Update for new LitterLib organization.
+         <4>   23â€“3â€“2006    pc      Minor updates
+         <3>    14â€“10â€“04    pc      Update to new object name
+         <2>     20â€“3â€“04    pc      Work on first implementation. All v1 features
 									implemented except signal input for frequency. And maybe
 									a phase inlet.
-         <1>     18Ð3Ð04    pc      first checked in.
+         <1>     18â€“3â€“04    pc      first checked in.
 */
 
 
 /*****************************************************************************************
  *****************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"	// Also #includes MaxUtils.h, ext.h
 #include "TrialPeriodUtils.h"
@@ -30,7 +30,7 @@
 #include "Taus88.h"
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char*	kClassName		= "lp.epoisse~";		// Class name
 
@@ -59,11 +59,11 @@ enum eFlags {
 	};
 
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	t_pxobject	coreObject;
@@ -92,11 +92,11 @@ typedef struct {
 	} objEpoisse;
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
 
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 #if 0
 	// Class message functions
@@ -119,7 +119,7 @@ static int*	EpoissePerform(int*);
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Utility functions
+#pragma mark â€¢ Utility functions
 
 /*****************************************************************************************
  *
@@ -184,7 +184,7 @@ GenBuf(
 
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /*****************************************************************************************
  *
@@ -350,7 +350,7 @@ void EpoisseInfo(objEpoisse* me)
 
 
 #pragma mark -
-#pragma mark ¥ DSP Methods
+#pragma mark â€¢ DSP Methods
 
 /*****************************************************************************************
  *
@@ -484,7 +484,7 @@ EpoisseDSP(
 	
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /*****************************************************************************************
  *

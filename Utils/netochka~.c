@@ -5,19 +5,19 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2002 Peter Castine
+	Copyright:	Â© 2002 Peter Castine
 
 	Change History (most recent first):
 
-         <8>   26Ð4Ð2006    pc      Update for new LitterLib organization.
-         <7>     11Ð1Ð04    pc      Update for modified LitterInit()
-         <6>      8Ð1Ð04    pc      Update for Windows.
-         <5>    6Ð7Ð2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
-         <4>  30Ð12Ð2002    pc      Add object version to NetochkaInfo()
-         <3>  30Ð12Ð2002    pc      Use 'STR#' resource instead of faux 'Vers' resource for storing
+         <8>   26â€“4â€“2006    pc      Update for new LitterLib organization.
+         <7>     11â€“1â€“04    pc      Update for modified LitterInit()
+         <6>      8â€“1â€“04    pc      Update for Windows.
+         <5>    6â€“7â€“2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
+         <4>  30â€“12â€“2002    pc      Add object version to NetochkaInfo()
+         <3>  30â€“12â€“2002    pc      Use 'STR#' resource instead of faux 'Vers' resource for storing
                                     version information used at run-time.
-         <2>  28Ð11Ð2002    pc      Tidy up after initial check in.
-         <1>  28Ð11Ð2002    pc      Initial check in.
+         <2>  28â€“11â€“2002    pc      Tidy up after initial check in.
+         <1>  28â€“11â€“2002    pc      Initial check in.
 		20-Feb-2002:	Implement floating-point NN factor (i.e., fractional bit resolution)
 		 3-Feb-2002:	First implementation.
 */
@@ -26,7 +26,7 @@
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"	// Also #includes MaxUtils.h, ext.h
 #include "MiscUtils.h"
@@ -34,7 +34,7 @@
 #include "Taus88.h"
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char*	kClassName		= "lp.nn~";			// Class name
 
@@ -60,9 +60,9 @@ enum {
 	outletSigOut
 	};
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	t_pxobject		coreObject;
@@ -82,10 +82,10 @@ typedef struct {
 	} tDegrade;
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 	// Class message functions
 void*	NetochkaNew(double, double);
@@ -107,7 +107,7 @@ static int*	NetochkaPerform(int*);
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Inline Functions
+#pragma mark â€¢ Inline Functions
 
 #pragma mark -
 
@@ -155,7 +155,7 @@ main(void)
 	}
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -198,7 +198,7 @@ punt:
 	}
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *
@@ -315,7 +315,7 @@ void NetochkaInfo(tDegrade* me)
 
 	
 #pragma mark -
-#pragma mark ¥ DSP Methods
+#pragma mark â€¢ DSP Methods
 
 /******************************************************************************************
  *

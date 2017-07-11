@@ -5,7 +5,7 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2006 Peter Castine
+	Copyright:	Â© 2006 Peter Castine
 
 	Change History (most recent first):
 
@@ -15,7 +15,7 @@
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"
 #include "Taus88.h"
@@ -29,7 +29,7 @@
 	#define LITTER_TIMEBOMB
 #endif
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char*	kClassName		= "lp.ale";			// Class name
 
@@ -47,11 +47,11 @@ enum {
 	};
 
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	Object			coreObject;
@@ -67,9 +67,9 @@ typedef struct {
 	} objAle;
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 	// Class message functions
 objAle*		AleNew(long);
@@ -131,7 +131,7 @@ main()
 	}
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -181,7 +181,7 @@ void AleFree(objAle* me)
 	}
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *

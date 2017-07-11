@@ -5,25 +5,25 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2000-01 Peter Castine
+	Copyright:	Â© 2000-01 Peter Castine
 
 	Change History (most recent first):
 
-         <7>     11Ð1Ð04    pc      Update for modified LitterInit()
-         <6>      8Ð1Ð04    pc      Update for Windows.
-         <5>    6Ð7Ð2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
-         <4>  30Ð12Ð2002    pc      Add object version to P2CInfo()
-         <3>  30Ð12Ð2002    pc      Use 'STR#' resource instead of faux 'Vers' resource for storing
+         <7>     11â€“1â€“04    pc      Update for modified LitterInit()
+         <6>      8â€“1â€“04    pc      Update for Windows.
+         <5>    6â€“7â€“2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
+         <4>  30â€“12â€“2002    pc      Add object version to P2CInfo()
+         <3>  30â€“12â€“2002    pc      Use 'STR#' resource instead of faux 'Vers' resource for storing
                                     version information used at run-time.
-         <2>  28Ð11Ð2002    pc      Tidy up after initial check in.
-         <1>  28Ð11Ð2002    pc      Initial check in.
+         <2>  28â€“11â€“2002    pc      Tidy up after initial check in.
+         <1>  28â€“11â€“2002    pc      Initial check in.
 */
 
 
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include <stdlib.h>		// For rand(), RAND_MAX
 #include <math.h>		// For pow()
@@ -32,7 +32,7 @@
 #include "TrialPeriodUtils.h"
 
 
-#pragma mark ¥ Global Constants
+#pragma mark â€¢ Global Constants
 
 const char*	kClassName		= "lp.p2c~";				// Class name
 
@@ -56,18 +56,18 @@ enum {
 	};
 
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	t_pxobject	coreObject;
 	} tConverter;
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 static void*	P2CNew(void);
 static void	P2CDSP(tConverter*, t_signal**, short*);
@@ -119,7 +119,7 @@ main(void)
 	}
 
 #pragma mark -
-#pragma mark ¥ Methods
+#pragma mark â€¢ Methods
 
 /******************************************************************************************
  *
@@ -145,7 +145,7 @@ P2CNew(void)
 	}
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *
@@ -171,7 +171,7 @@ void P2CInfo(tConverter* me)
 	
 
 #pragma mark -
-#pragma mark ¥ DSP Methods
+#pragma mark â€¢ DSP Methods
 
 /******************************************************************************************
  *

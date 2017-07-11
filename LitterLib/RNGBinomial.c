@@ -5,12 +5,12 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2001-2006 Peter Castine
+	Copyright:	Â© 2001-2006 Peter Castine
 
 	Change History (most recent first):
 
-         <2>   26Ð4Ð2006    pc      Renamed LitterLib files for Binomial distribution
-         <1>   30Ð3Ð2006    pc      first checked in (after renaming)
+         <2>   26â€“4â€“2006    pc      Renamed LitterLib files for Binomial distribution
+         <1>   30â€“3â€“2006    pc      first checked in (after renaming)
 */
 
 
@@ -29,7 +29,7 @@
 
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "RNGBinomial.h"
 #include "MaxUtils.h"							// for CountBits(), etc.
@@ -39,12 +39,12 @@
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Private & Inline Functions
+#pragma mark â€¢ Private & Inline Functions
 
 
 
 #pragma mark -
-#pragma mark ¥ Public Functions
+#pragma mark â€¢ Public Functions
 
 /******************************************************************************************
  *

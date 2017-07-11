@@ -5,18 +5,18 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2006 Peter Castine
+	Copyright:	Â© 2006 Peter Castine
 
 	Change History (most recent first):
 
-         <1>   23Ð3Ð2006    pc      first checked in.
+         <1>   23â€“3â€“2006    pc      first checked in.
 */
 
 
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"
 #include "TrialPeriodUtils.h"
@@ -26,7 +26,7 @@
 #include <math.h>
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char	kClassName[]	= "lp.vilfrie";			// Class name
 
@@ -46,7 +46,7 @@ enum {
 
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	LITTER_CORE_OBJECT(Object, coreObject);
@@ -64,7 +64,7 @@ typedef struct {
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *
@@ -155,7 +155,7 @@ static void VilfrieSeed(objPareto* me, long iSeed)
 
 
 #pragma mark -
-#pragma mark ¥ Attribute/Information Functions
+#pragma mark â€¢ Attribute/Information Functions
 
 /******************************************************************************************
  *
@@ -388,7 +388,7 @@ static void VilfrieTell(objPareto* me, Symbol* iTarget, Symbol* iMsg)
 
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *

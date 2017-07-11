@@ -5,15 +5,15 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2001-2002 Peter Castine
+	Copyright:	Â© 2001-2002 Peter Castine
 
 	Change History (most recent first):
 
-         <4>   30Ð3Ð2006    pc      Fixed problems w/Windows crashing in the MSL.
-         <3>     27Ð2Ð06    pc      Move constants (kPi, etc.) to main LitterLib files. The
+         <4>   30â€“3â€“2006    pc      Fixed problems w/Windows crashing in the MSL.
+         <3>     27â€“2â€“06    pc      Move constants (kPi, etc.) to main LitterLib files. The
                                     constants are used in lots of projects that don't need MoreMath.
-         <2>     26Ð2Ð06    pc      Add expMin, expMax to enumerator Expect.
-         <1>     26Ð2Ð06    pc      First checked in after moving file and splitting off RNGs,
+         <2>     26â€“2â€“06    pc      Add expMin, expMax to enumerator Expect.
+         <1>     26â€“2â€“06    pc      First checked in after moving file and splitting off RNGs,
                                     Utilities, etc. into separate files
 */
 
@@ -21,49 +21,49 @@
 /******************************************************************************************
 	Previous History:
 
-        <21>     18Ð2Ð06    pc      Add general digamma() function (supporting all reals).
-        <20>     16Ð2Ð06    pc      Preflight to the resnamecopy() call in LitterInit(): make sure
+        <21>     18â€“2â€“06    pc      Add general digamma() function (supporting all reals).
+        <20>     16â€“2â€“06    pc      Preflight to the resnamecopy() call in LitterInit(): make sure
                                     resource is available. This is not the case in Collectives post
                                     Max-4.1, and leads to spurious error messages.
-        <19>     15Ð2Ð06    pc      Need to implement lgamma() and gamma() functions because the
+        <19>     15â€“2â€“06    pc      Need to implement lgamma() and gamma() functions because the
                                     braindead MSL/Windows doesn't provide them.  Also added
                                     Factorial(), LogFactorial() and two special cases of the digamma
                                     function.
-        <18>     15Ð2Ð06    pc      Add LitterExpect(), support for an 'expect' message for all
+        <18>     15â€“2â€“06    pc      Add LitterExpect(), support for an 'expect' message for all
                                     Litter RNGs.
-        <17>     12Ð2Ð06    pc      Modify MachineKharma() to have the sAutoSeedCount part of the
+        <17>     12â€“2â€“06    pc      Modify MachineKharma() to have the sAutoSeedCount part of the
                                     algorithm make a bigger impact on successive seeds.
-        <16>     19Ð1Ð06    pc      Improve constant used in AddPepper()
-        <15>     19Ð1Ð06    pc      Improve seeding algorith used for Taus88. Moved CountBits() to
+        <16>     19â€“1â€“06    pc      Improve constant used in AddPepper()
+        <15>     19â€“1â€“06    pc      Improve seeding algorith used for Taus88. Moved CountBits() to
                                     MaxUtils
-        <14>     11Ð1Ð06    pc      Previous solution for LitterAssistVA() requires user to have
+        <14>     11â€“1â€“06    pc      Previous solution for LitterAssistVA() requires user to have
                                     MSL_All-DLL_x86.lib installed. We need to hack a different
                                     solution for Windows.
-        <13>      9Ð1Ð06    pc      Tracked down bug in Windows with variable-argument versions of
+        <13>      9â€“1â€“06    pc      Tracked down bug in Windows with variable-argument versions of
                                     Assistance (really a error in the MSL_Allxxx Library linked in).
                                     Added LitterAssistResFrag() function.
-        <12>     14Ð1Ð04    pc      Make constants kMaxResourceStrSize and kMaxResourceStrLen
+        <12>     14â€“1â€“04    pc      Make constants kMaxResourceStrSize and kMaxResourceStrLen
                                     available to all objects.
-        <11>     13Ð1Ð04    pc      Use Max API getbytes() & freebytes() for the Taus88 and TT800
+        <11>     13â€“1â€“04    pc      Use Max API getbytes() & freebytes() for the Taus88 and TT800
                                     new/free routines. It seems to be the most reliable way to make
                                     the relevant code cross-platform compatible, and the amounts of
                                     memory required are within getbytes() capabilities.
-        <10>     10Ð1Ð04    pc      Major updates to support cross-platform development. Added
+        <10>     10â€“1â€“04    pc      Major updates to support cross-platform development. Added
                                     LitterGetVersVal() & Co. Freezing features for Litter 1.5 (bar
                                     beta bug fixes).
-         <9>      4Ð1Ð04    pc      Add LitterVers() and LetterAssist(): default methods for
+         <9>      4â€“1â€“04    pc      Add LitterVers() and LetterAssist(): default methods for
                                     handling vers and assist messages.
-         <8>      1Ð1Ð04    pc      More updating for Windows-compatibility. Add __MAX_MSP_OBJECT__
+         <8>      1â€“1â€“04    pc      More updating for Windows-compatibility. Add __MAX_MSP_OBJECT__
                                     and __MAX_USER_INTERFACE_OBJECT__ macros to conditionally
                                     include/link/compile relevant parts of the Max API only when
                                     needed.
-         <7>   8Ð16Ð2003    pc      Updated for Windows (sort of, there is not yet very clean).
-         <6>    5Ð7Ð2003    pc      Revised strategy for seeding RNGs. Cf comments to Taus88Seed()
+         <7>   8â€“16â€“2003    pc      Updated for Windows (sort of, there is not yet very clean).
+         <6>    5â€“7â€“2003    pc      Revised strategy for seeding RNGs. Cf comments to Taus88Seed()
                                     and TT800Seed() for more details.
-         <5>   30Ð3Ð2003    pc      Add function LitterAddClass() as a standardized "pick the right
+         <5>   30â€“3â€“2003    pc      Add function LitterAddClass() as a standardized "pick the right
                                     category for the current version of Max" tool.
-         <4>  28Ð11Ð2002    pc      Tidy up after check-in
-         <1>  28Ð11Ð2002    pc     Initial check in.
+         <4>  28â€“11â€“2002    pc      Tidy up after check-in
+         <1>  28â€“11â€“2002    pc     Initial check in.
 		
 		4-Apr-2001:		TT800 now maintains it's own private pool of seeds, allowing users
 						to call the TT800 functions with NULL for iData (in which case the
@@ -72,7 +72,7 @@
 						else that's going on. Wheeeee.
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"
 
@@ -85,7 +85,7 @@
 #endif
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 	// We occassionally need these
 	// High precision values from Abramowitz & Stegun _Handbook of Mathematical Functions_
@@ -117,7 +117,7 @@ CFStringRef		kLPPackageVersValKey		= CFSTR("LPPackageVersVal"),
 #endif
 
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 #if LITTER_USE_OBEX
 	typedef t_class*		tMaxClassPtr;
@@ -127,11 +127,11 @@ CFStringRef		kLPPackageVersValKey		= CFSTR("LPPackageVersVal"),
 
 
 
-#pragma mark ¥ Static (Private) Variables
+#pragma mark â€¢ Static (Private) Variables
 
 
 
-#pragma mark ¥ Initialize Global Variables
+#pragma mark â€¢ Initialize Global Variables
 
 tMaxClassPtr		gObjectClass	= NIL;
 
@@ -154,12 +154,12 @@ tMaxClassPtr		gObjectClass	= NIL;
 
 
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ OS Utilities
+#pragma mark â€¢ OS Utilities
 
 /******************************************************************************************
  *

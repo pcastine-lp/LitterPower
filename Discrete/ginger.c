@@ -5,25 +5,25 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2001-2002 Peter Castine
+	Copyright:	Â© 2001-2002 Peter Castine
 
 	Change History (most recent first):
 
-        <11>     15Ð3Ð06    pc      Now need to #include "Taus88.h" because it has been split off
+        <11>     15â€“3â€“06    pc      Now need to #include "Taus88.h" because it has been split off
                                     from the main LitterLib.
-        <10>     10Ð1Ð06    pc      Updated to use LitterAssistResFrag(). Windows uses more
+        <10>     10â€“1â€“06    pc      Updated to use LitterAssistResFrag(). Windows uses more
                                     appropriate MSL version.
-         <9>      5Ð3Ð05    pc      Finally get rid of the legacy SetUpA4 stuff from 68k days.
-         <8>     14Ð1Ð04    pc      Fix change to constant kMaxResourceStrSize
-         <7>     14Ð1Ð04    pc      Update for Windows
-         <6>    7Ð7Ð2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
-         <5>  30Ð12Ð2002    pc      Drop faux 'Vers' resource and related modifications. Add object
+         <9>      5â€“3â€“05    pc      Finally get rid of the legacy SetUpA4 stuff from 68k days.
+         <8>     14â€“1â€“04    pc      Fix change to constant kMaxResourceStrSize
+         <7>     14â€“1â€“04    pc      Update for Windows
+         <6>    7â€“7â€“2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
+         <5>  30â€“12â€“2002    pc      Drop faux 'Vers' resource and related modifications. Add object
                                     version to DoInfo().
-         <4>  29Ð12Ð2002    pc      Move our private P2CStr implementation (for use in real Carbon)
+         <4>  29â€“12â€“2002    pc      Move our private P2CStr implementation (for use in real Carbon)
                                     to MaxLib.c
-         <3>  29Ð12Ð2002    pc      Implement P2CStr() with Carbon's CopyPascalStringToC().
-         <2>  28Ð11Ð2002    pc      Tidy up after initial check in.
-         <1>  28Ð11Ð2002    pc      Initial check in.
+         <3>  29â€“12â€“2002    pc      Implement P2CStr() with Carbon's CopyPascalStringToC().
+         <2>  28â€“11â€“2002    pc      Tidy up after initial check in.
+         <1>  28â€“11â€“2002    pc      Initial check in.
 		10-Jul-2001:	Moved core I Ching calculations to IChingCore.c in order to share
 						the code with the lp.kg external.
 		12-Apr-2001:	Renamde again to follow _new_ Litter conventions.
@@ -35,14 +35,14 @@
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "IChingCore.h"
 #include "TrialPeriodUtils.h"
 #include "Taus88.h"
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char*	kClassName		= "lp.ginger";			// Class name
 
@@ -60,11 +60,11 @@ enum {
 	};
 
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	LITTER_CORE_OBJECT(Object, coreObject);
@@ -80,7 +80,7 @@ typedef struct {
 	} objIChing;
 
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 	// Class message functions
 //void*	GingerNew(Symbol*);
@@ -99,7 +99,7 @@ static void GingerSet	(objIChing*, Symbol*);
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -133,7 +133,7 @@ GingerNew(
 	}
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *
@@ -225,12 +225,12 @@ GingerZen(
 	#pragma unused(me)
 	
 	const char*	kZenStrings[] = {
-						"If something is boring after two minutesÉ",
-						"Étry it for four.",
+						"If something is boring after two minutesâ€¦",
+						"â€¦try it for four.",
 						"If it is still boring, try it for eight.",
 						"Then try it for sixteen, thirty-two, and so on.",
 						"Eventually one discovers that it's not boring at all but very interesting.",
-						"Ñ John Cage, _Silence_"
+						"â€” John Cage, _Silence_"
 						};
 	const int	kLastZenString	= 5;
 	
@@ -279,7 +279,7 @@ GingerAssist(
 	}
 
 #pragma mark -
-#pragma mark ¥ Attribute/Information Functions
+#pragma mark â€¢ Attribute/Information Functions
 
 /******************************************************************************************
  *

@@ -5,18 +5,18 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2001-2006 Peter Castine
+	Copyright:	Â© 2001-2006 Peter Castine
 
 	Change History (most recent first):
 
-         <1>   30Ð3Ð2006    pc      Initial check in.
+         <1>   30â€“3â€“2006    pc      Initial check in.
 */
 
 
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"				// Include first
 #include "RNGGauss.h"				// Also include MiscUtils.h
@@ -26,7 +26,7 @@
 
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
-#pragma mark ¥ Utilities
+#pragma mark â€¢ Utilities
 
 /******************************************************************************************
  *
@@ -113,7 +113,7 @@ UnitCirc2Norm(
 	
 
 #pragma mark -
-#pragma mark ¥ Legacy Box-Muller approach
+#pragma mark â€¢ Legacy Box-Muller approach
 
 double
 NormalBM(
@@ -184,7 +184,7 @@ NormalBMTaus88(
 
 
 #pragma mark -
-#pragma mark ¥ Kinderman-Ramage Algorithm
+#pragma mark â€¢ Kinderman-Ramage Algorithm
 
 	static inline double NormKRHelper(double x, double A)
 		{ return 0.3989422804 * exp(-0.5 * x * x) - 0.1800251911 * (A - x); }

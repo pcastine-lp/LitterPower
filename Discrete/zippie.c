@@ -5,22 +5,22 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2006 Peter Castine
+	Copyright:	Â© 2006 Peter Castine
 
 	Change History (most recent first):
 
-         <2>     16Ð3Ð06    pc      Wikipedia defines the distirubtion differently from Dagnupar. We
+         <2>     16â€“3â€“06    pc      Wikipedia defines the distirubtion differently from Dagnupar. We
                                     used the former for DoExpect() but the latter for generating
                                     values. We now follow Dagnupar's definition, which seems to have
                                     higher acceptance, throughout.
-         <1>     15Ð3Ð06    pc      first checked in.
+         <1>     15â€“3â€“06    pc      first checked in.
 */
 
 
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"
 #include "TrialPeriodUtils.h"
@@ -31,7 +31,7 @@
 //#include <math.h>
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char*		kClassName		= "lp.zippie";			// Class name
 
@@ -49,7 +49,7 @@ enum {
 	};
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	LITTER_CORE_OBJECT(Object, coreObject);
@@ -67,7 +67,7 @@ typedef struct {
 
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *
@@ -156,7 +156,7 @@ static void ZippieSeed(objZipf* me, long iSeed)
 
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -206,7 +206,7 @@ static void ZippieFree(objZipf* me)
 	{ Taus88Free(me->tausData); }							// Taus88Free is NIL-safe
 
 #pragma mark -
-#pragma mark ¥ Attribute/Information Functions
+#pragma mark â€¢ Attribute/Information Functions
 
 /******************************************************************************************
  *

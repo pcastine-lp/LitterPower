@@ -1,30 +1,30 @@
 /*
-	File:		gruyère~.c
+	File:		gruy√®re~.c
 
 	Contains:	1st order "uniform" Markov chains for waveform generation
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2004 Peter Castine
+	Copyright:	¬© 2004 Peter Castine
 
 	Change History (most recent first):
 
-         <3>   26–4–2006    pc      Update for new LitterLib organization.
-         <2>    10–12–04    pc      Fix parameters to error message in GruyereSetBuf()
-         <1>     9–12–04    pc      first checked in.
+         <3>   26‚Äì4‚Äì2006    pc      Update for new LitterLib organization.
+         <2>    10‚Äì12‚Äì04    pc      Fix parameters to error message in GruyereSetBuf()
+         <1>     9‚Äì12‚Äì04    pc      first checked in.
 */
 
 
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark • Include Files
+#pragma mark ‚Ä¢ Include Files
 
 #include "LitterLib.h"									// Also #includes MaxUtils.h, ext.h
 #include "TrialPeriodUtils.h"
 #include "Taus88.h"
 
-#pragma mark • Constants
+#pragma mark ‚Ä¢ Constants
 
 const char*			kClassName		= "lp.gruyere~";		// Class name
 
@@ -69,10 +69,10 @@ enum {
 	};
 	
 	
-#pragma mark • Type Definitions
+#pragma mark ‚Ä¢ Type Definitions
 
 
-#pragma mark • Object Structure
+#pragma mark ‚Ä¢ Object Structure
 
 typedef struct {
 	t_pxobject		coreObject;
@@ -93,11 +93,11 @@ typedef struct {
 	} objGruyere;
 
 
-#pragma mark • Global Variables
+#pragma mark ‚Ä¢ Global Variables
 
 t_sample	gCosine[kTableLen];
 
-#pragma mark • Function Prototypes
+#pragma mark ‚Ä¢ Function Prototypes
 
 	// Class message functions
 void*	GruyereNew(SymbolPtr, short, Atom[]);
@@ -119,7 +119,7 @@ static int*	GruyerePerform(int*);
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark • Inline Functions
+#pragma mark ‚Ä¢ Inline Functions
 
 
 
@@ -187,7 +187,7 @@ main(void)
 
 
 #pragma mark -
-#pragma mark • Utilities
+#pragma mark ‚Ä¢ Utilities
 
 /******************************************************************************************
  *
@@ -245,7 +245,7 @@ SetEpsilon(
 	}
 
 #pragma mark -
-#pragma mark • Class Message Handlers
+#pragma mark ‚Ä¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -343,7 +343,7 @@ GruyereNew(
 	}
 
 #pragma mark -
-#pragma mark • Object Message Handlers
+#pragma mark ‚Ä¢ Object Message Handlers
 
 /******************************************************************************************
  *
@@ -473,7 +473,7 @@ void GruyereInfo(objGruyere* me)
 	{ LitterInfo(kClassName, (tObjectPtr) me, (method) GruyereTattle); }
 
 #pragma mark -
-#pragma mark • DSP Methods
+#pragma mark ‚Ä¢ DSP Methods
 
 /******************************************************************************************
  *
@@ -516,7 +516,7 @@ GruyereDSP(
  *
  *	Parameter block for GruyerePerform contains 6 values:
  *		- Address of this function
- *		- The performing gruyère~ object
+ *		- The performing gruy√®re~ object
  *		- Vector size
  *		- Frequency signal
  *		- AmpRate signal

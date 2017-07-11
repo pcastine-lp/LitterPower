@@ -6,13 +6,13 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2003 Peter Castine
+	Copyright:	Â© 2003 Peter Castine
 
 	Change History (most recent first):
 
-         <2>   12Ð8Ð2005    pc      #include bix.h after LiterLib.h (Windows needs typedef for
+         <2>   12â€“8â€“2005    pc      #include bix.h after LiterLib.h (Windows needs typedef for
                                     Byte). Other changes for LBJ-inclusion.
-         <1>      5Ð3Ð05    pc      Initial check in.
+         <1>      5â€“3â€“05    pc      Initial check in.
 */
 
 
@@ -21,7 +21,7 @@
 		30-Jul-2003:		First implementation.
  ******************************************************************************************/
 
-#pragma mark ¥ Identify Target
+#pragma mark â€¢ Identify Target
 
 #ifdef __MWERKS__
 	#if __ide_target("BIX Unpack (Boron)")								\
@@ -46,7 +46,7 @@
 #endif
 
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"
 #include "TrialPeriodUtils.h"
@@ -57,7 +57,7 @@ t_jit_err jit_ob3d_set(void *x, void *p);
 
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 #if __EX_LIBRIS__
 	const char	kMaxClassName[]	= "jit.bixcp.from",		// Class name for Max, also used
@@ -80,7 +80,7 @@ enum strIndices {
 	strIndexOutLeft		= strIndexOutMatrix
 	};
 	
-#pragma mark ¥ BIXCP Data
+#pragma mark â€¢ BIXCP Data
 
 typedef struct {
 	long	magic,
@@ -90,7 +90,7 @@ typedef tBixCPGeneric* tBixCPGenericPtr;
 	
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	Object		coreObject;
@@ -105,7 +105,7 @@ typedef struct {
 	} msobBixCP;					// msob == Max Shell Object
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
 void*			gBixCPJitClass	= NIL;
 Messlist*		gBixCPMaxClass	= NIL;
@@ -118,7 +118,7 @@ SymbolPtr		gsymJitMatrix		= NIL,
 				gsymDeviceCtrlOK	= NIL;
 
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 	// Max methods/functions
 static msobBixCP*	BixCPNew	(Symbol*, long, Atom*);
@@ -138,7 +138,7 @@ static void	BixCPInfo			(msobBixCP*);
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Inline Functions
+#pragma mark â€¢ Inline Functions
 
 static inline void* MainOutlet(msobBixCP* me)
 	{ return me->coreObject.o_outlet; }
@@ -219,7 +219,7 @@ main(void)
 
 
 #pragma mark -
-#pragma mark ¥ Max Shell Methods
+#pragma mark â€¢ Max Shell Methods
 
 /******************************************************************************************
  *
@@ -746,5 +746,5 @@ BixCPTattle(
 
 
 #pragma mark -
-#pragma mark ¥ Jitter Methods
+#pragma mark â€¢ Jitter Methods
 

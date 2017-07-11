@@ -5,7 +5,7 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2007 Peter Castine
+	Copyright:	Â© 2007 Peter Castine
 
 	Change History (most recent first):
 
@@ -17,11 +17,11 @@
 		18-Feb-2007:	First implementation.
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "TrialPeriodUtils.h"
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char	kClassName[]	= "lp.twist~";	    		// Class name
 
@@ -40,9 +40,9 @@ enum {
 	outletSigOut
 	};
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	t_pxobject	coreObject;
@@ -51,17 +51,17 @@ typedef struct {
 	} objCheby;
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 
 
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Inline Functions
+#pragma mark â€¢ Inline Functions
 
 #pragma mark -
 
@@ -115,7 +115,7 @@ main(void)
 
 
 #pragma mark -
-#pragma mark ¥ Instantiation
+#pragma mark â€¢ Instantiation
 
 /******************************************************************************************
  *
@@ -187,7 +187,7 @@ punt:
 	
 
 #pragma mark -
-#pragma mark ¥ Utilities
+#pragma mark â€¢ Utilities
 
 /******************************************************************************************
  *
@@ -334,7 +334,7 @@ static double Exponent(double iVal, double iBase)
 	{ return iVal * pow(iBase, iVal - 1.0); }
 
 #pragma mark -
-#pragma mark ¥ Object Methods
+#pragma mark â€¢ Object Methods
 
 /******************************************************************************************
  *
@@ -443,7 +443,7 @@ TwistAssist(
 	
 
 #pragma mark -
-#pragma mark ¥ DSP Methods
+#pragma mark â€¢ DSP Methods
 
 /******************************************************************************************
  *

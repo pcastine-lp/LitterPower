@@ -5,20 +5,20 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2001-2002 Peter Castine
+	Copyright:	Â© 2001-2002 Peter Castine
 
 	Change History (most recent first):
 
-         <8>   23Ð3Ð2006    pc      Implement alternate generating algorithms (more efficient for
+         <8>   23â€“3â€“2006    pc      Implement alternate generating algorithms (more efficient for
                                     large lambda)
-         <7>     15Ð3Ð06    pc      Add expect message
-         <6>     15Ð1Ð04    pc      Avoid possible memory leak if seed argument is used.
-         <5>     14Ð1Ð04    pc      Update for Windows.
-         <4>    7Ð7Ð2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
-         <3>  30Ð12Ð2002    pc      Drop faux 'Vers' resource and related modifications. Add object
+         <7>     15â€“3â€“06    pc      Add expect message
+         <6>     15â€“1â€“04    pc      Avoid possible memory leak if seed argument is used.
+         <5>     14â€“1â€“04    pc      Update for Windows.
+         <4>    7â€“7â€“2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
+         <3>  30â€“12â€“2002    pc      Drop faux 'Vers' resource and related modifications. Add object
                                     version to DoInfo().
-         <2>  28Ð11Ð2002    pc      Tidy up after initial check in.
-         <1>  28Ð11Ð2002    pc      Initial check in.
+         <2>  28â€“11â€“2002    pc      Tidy up after initial check in.
+         <1>  28â€“11â€“2002    pc      Initial check in.
 	Change History (most recent first):
 		30-Jun-2001:	Modified to use Taus88 instead of TT800 as default generator.
 		2-Apr-2001:		First implementation.
@@ -34,13 +34,13 @@
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "TrialPeriodUtils.h"
 #include "RNGPoisson.h"
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char*		kClassName		= "lp.pfishie";			// Class name
 
@@ -54,7 +54,7 @@ enum {
 	};
 
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 typedef union {
 	double			lambda;				// Just lambda
@@ -62,7 +62,7 @@ typedef union {
 	tPoisRejParams	rejParams;
 	} uPoisParams;
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	LITTER_CORE_OBJECT(Object, coreObject);
@@ -74,7 +74,7 @@ typedef struct {
 	} objPoisson;
 
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 	// Object message functions
 static void PfishieLambda(objPoisson*, double);
@@ -84,7 +84,7 @@ static void PfishieLambda(objPoisson*, double);
 
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -134,7 +134,7 @@ static void PfishieFree(objPoisson* me)
 
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *
@@ -210,7 +210,7 @@ static void PfishieSeed(objPoisson* me, long iSeed)
 
 
 #pragma mark -
-#pragma mark ¥ Attribute/Information Functions
+#pragma mark â€¢ Attribute/Information Functions
 
 /******************************************************************************************
  *

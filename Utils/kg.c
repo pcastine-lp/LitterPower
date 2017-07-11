@@ -6,22 +6,22 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2001-2002 Peter Castine
+	Copyright:	Â© 2001-2002 Peter Castine
 
 	Change History (most recent first):
 
-         <9>   26Ð4Ð2006    pc      Update for new LitterLib organization.
-         <8>     26Ð2Ð05    pc      Finally kill all references to the legacy <SetUpA4.h> and
+         <9>   26â€“4â€“2006    pc      Update for new LitterLib organization.
+         <8>     26â€“2â€“05    pc      Finally kill all references to the legacy <SetUpA4.h> and
                                     <A4Stuff.h> stuff. 
                                     <A4Stuff.h> stuff. 
-         <7>     11Ð1Ð04    pc      Update for modified LitterInit()
-         <6>      8Ð1Ð04    pc      Update for Windows.
-         <5>    6Ð7Ð2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
-         <4>  30Ð12Ð2002    pc      Add object version to KgInfo()
-         <3>  30Ð12Ð2002    pc      Use 'STR#' resource instead of faux 'Vers' resource for storing
+         <7>     11â€“1â€“04    pc      Update for modified LitterInit()
+         <6>      8â€“1â€“04    pc      Update for Windows.
+         <5>    6â€“7â€“2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
+         <4>  30â€“12â€“2002    pc      Add object version to KgInfo()
+         <3>  30â€“12â€“2002    pc      Use 'STR#' resource instead of faux 'Vers' resource for storing
                                     version information used at run-time.
-         <2>  28Ð11Ð2002    pc      Tidy up after initial check in.
-         <1>  28Ð11Ð2002    pc      Initial check in.
+         <2>  28â€“11â€“2002    pc      Tidy up after initial check in.
+         <1>  28â€“11â€“2002    pc      Initial check in.
 		10-Jul-2001:	First implementation
 */
 
@@ -29,14 +29,14 @@
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "IChingCore.h"							// #includes LitterLib.h
 #include "TrialPeriodUtils.h"
 #include "Taus88.h"
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char*	kClassName		= "lp.kg";			// Class name
 
@@ -57,10 +57,10 @@ enum {
 	const int kMaxItems	= 256;
 #endif
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	Object	coreObject;
@@ -76,9 +76,9 @@ typedef struct {
 	} tChingMap;
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
-#pragma mark ¥ Function Prototypes
+#pragma mark â€¢ Function Prototypes
 
 	// Class message functions
 static void*	KgNew	(long, Symbol*);
@@ -99,7 +99,7 @@ static void		KgInfo		(tChingMap*);
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Inline Functions
+#pragma mark â€¢ Inline Functions
 
 #pragma mark -
 
@@ -147,7 +147,7 @@ main()
 
 
 #pragma mark -
-#pragma mark ¥ Helper Functions
+#pragma mark â€¢ Helper Functions
 
 /******************************************************************************************
  *
@@ -216,7 +216,7 @@ SetThreshholds(
 
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -276,7 +276,7 @@ punt:
 	}
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *

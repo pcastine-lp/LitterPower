@@ -5,18 +5,18 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2001-2002 Peter Castine
+	Copyright:	Â© 2001-2002 Peter Castine
 
 	Change History (most recent first):
 
-         <7>   23Ð3Ð2006    pc      Add support for expect message.
-         <6>     15Ð1Ð04    pc      Avoid possible memory leak if seed argument is used.
-         <5>     11Ð1Ð04    pc      Update for Windows.
-         <4>    7Ð7Ð2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
-         <3>  30Ð12Ð2002    pc      Drop faux 'Vers' resource and related modifications. Add object
+         <7>   23â€“3â€“2006    pc      Add support for expect message.
+         <6>     15â€“1â€“04    pc      Avoid possible memory leak if seed argument is used.
+         <5>     11â€“1â€“04    pc      Update for Windows.
+         <4>    7â€“7â€“2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
+         <3>  30â€“12â€“2002    pc      Drop faux 'Vers' resource and related modifications. Add object
                                     version to YInfo().
-         <2>  28Ð11Ð2002    pc      Tidy up after initial check-in.
-         <1>  28Ð11Ð2002    pc      Initial check in.
+         <2>  28â€“11â€“2002    pc      Tidy up after initial check-in.
+         <1>  28â€“11â€“2002    pc      Initial check in.
 		30-Jun-2001:	Modified to use Taus88 instead of TT800 as default generator.
 						Also update to use new ULong2Unitxx() functions.
 		14-Apr-2001:	Overhaul for LPP
@@ -27,7 +27,7 @@
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include "LitterLib.h"
 #include "TrialPeriodUtils.h"
@@ -38,7 +38,7 @@
 #include <math.h>
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char	kClassName[]	= "lp.y";				// Class name
 
@@ -57,11 +57,11 @@ enum {
 	};
 
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	LITTER_CORE_OBJECT(Object, coreObject);
@@ -77,7 +77,7 @@ typedef struct {
 #pragma mark -
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *
@@ -128,7 +128,7 @@ static void YSeed( objWeibull* me, long iSeed)
 
 
 #pragma mark -
-#pragma mark ¥ Attribute/Information Functions
+#pragma mark â€¢ Attribute/Information Functions
 
 /******************************************************************************************
  *
@@ -386,7 +386,7 @@ static void YTell(objWeibull* me, Symbol* iTarget, Symbol* iAttrName)
 
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *

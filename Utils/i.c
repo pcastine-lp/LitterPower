@@ -5,25 +5,25 @@
 
 	Written by:	Peter Castine
 
-	Copyright:	© 2001-2002 Peter Castine
+	Copyright:	Â© 2001-2002 Peter Castine
 
 	Change History (most recent first):
 
-        <11>   26Ð4Ð2006    pc      Update for new LitterLib organization.
-        <10>   23Ð3Ð2006    pc      Fix problem with gCommonSym array allocation.
-         <9>     26Ð2Ð05    pc      Finally kill all references to the legacy <SetUpA4.h> and
+        <11>   26â€“4â€“2006    pc      Update for new LitterLib organization.
+        <10>   23â€“3â€“2006    pc      Fix problem with gCommonSym array allocation.
+         <9>     26â€“2â€“05    pc      Finally kill all references to the legacy <SetUpA4.h> and
                                     <A4Stuff.h> stuff. 
                                     <A4Stuff.h> stuff. 
-         <8>     28Ð1Ð04    pc      Need to #include <string.h> now that we are abandoning the
+         <8>     28â€“1â€“04    pc      Need to #include <string.h> now that we are abandoning the
                                     micro-stdlib.
-         <7>     11Ð1Ð04    pc      Update for modified LitterInit()
-         <6>      8Ð1Ð04    pc      Update for Windows.
-         <5>    6Ð7Ð2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
-         <4>  30Ð12Ð2002    pc      Add object version to IChingInfo()
-         <3>  30Ð12Ð2002    pc      Use 'STR#' resource instead of faux 'Vers' resource for storing
+         <7>     11â€“1â€“04    pc      Update for modified LitterInit()
+         <6>      8â€“1â€“04    pc      Update for Windows.
+         <5>    6â€“7â€“2003    pc      Use new LitterInfo method (incl. gModDate, LitterAddClass, etc.)
+         <4>  30â€“12â€“2002    pc      Add object version to IChingInfo()
+         <3>  30â€“12â€“2002    pc      Use 'STR#' resource instead of faux 'Vers' resource for storing
                                     version information used at run-time.
-         <2>  28Ð11Ð2002    pc      Tidy up after initial check in.
-         <1>  28Ð11Ð2002    pc      Initial check in.
+         <2>  28â€“11â€“2002    pc      Tidy up after initial check in.
+         <1>  28â€“11â€“2002    pc      Initial check in.
 		10-Jul-2001:	First implementation
 */
 
@@ -31,7 +31,7 @@
 /******************************************************************************************
  ******************************************************************************************/
 
-#pragma mark ¥ Include Files
+#pragma mark â€¢ Include Files
 
 #include <string.h>								// all for strchr()
 
@@ -40,7 +40,7 @@
 #include "Taus88.h"
 
 
-#pragma mark ¥ Constants
+#pragma mark â€¢ Constants
 
 const char	kClassName[]	= "lp.i";			// Class name
 
@@ -68,13 +68,13 @@ enum {
 #else
 	const char	kGenStr[]		= "lp.i Common",	// Additional 'STR#' resources
 				kTrigrams[]		= "lp.i Trigrams",
-				kChienStrs[]	= "lp.i ChÕien",
-				kKanStrs[]		= "lp.i KÕan",
+				kChienStrs[]	= "lp.i Châ€™ien",
+				kKanStrs[]		= "lp.i Kâ€™an",
 				kKenStrs[]		= "lp.i Ken",
 				kChenStrs[]		= "lp.i Chen",
 				kSunStrs[]		= "lp.i Sun",
 				kLiStrs[]		= "lp.i Li",
-				kKunStrs[]		= "lp.i KÕun",
+				kKunStrs[]		= "lp.i Kâ€™un",
 				kTuiStrs[]		= "lp.i Tui";
 #endif
 	// Indicies for Common texts STR# Resource
@@ -146,14 +146,14 @@ enum LineOptions {
 const Byte	kStrExtensionChar	= '+',
 			kMaxNewlineChar		= ',';
 
-#pragma mark ¥ Type Definitions
+#pragma mark â€¢ Type Definitions
 
 typedef enum LineOptions	eLineOpts;
 typedef enum TrigramOptions	eTriOpts;
 typedef enum CommonSymbols	eCommonSyms;
 
 
-#pragma mark ¥ Object Structure
+#pragma mark â€¢ Object Structure
 
 typedef struct {
 	LITTER_CORE_OBJECT(Object, coreObject);
@@ -176,7 +176,7 @@ typedef struct {
 	} objIChing;
 
 
-#pragma mark ¥ Global Variables
+#pragma mark â€¢ Global Variables
 
 #if __LITTER_UB__
 	tStrListPtr	gChingStrings[9]	= {NIL, NIL, NIL, NIL, NIL, NIL, NIL, NIL, NIL};
@@ -193,7 +193,7 @@ Symbol*		gCommonSym[csCount + 1]	= {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 
 /*****************************  I M P L E M E N T A T I O N  ******************************/
 
-#pragma mark ¥ Utility Functions
+#pragma mark â€¢ Utility Functions
 
 static inline void
 IChingGetResourceString(char oBuf[], short iResID, int iIndex)
@@ -218,7 +218,7 @@ IChingGetResourceString(char oBuf[], short iResID, int iIndex)
 	}
 
 #pragma mark -
-#pragma mark ¥ Class Message Handlers
+#pragma mark â€¢ Class Message Handlers
 
 /******************************************************************************************
  *
@@ -267,7 +267,7 @@ punt:
 	}
 
 #pragma mark -
-#pragma mark ¥ Auxiliary Methods
+#pragma mark â€¢ Auxiliary Methods
 
 /******************************************************************************************
  *
@@ -402,8 +402,8 @@ LineHeadOut(
 	const char	kConRulerNative[] =	"\245 ",
 				kGovRulerNative[] = "\241 ";
 #else
-	const char	kConRulerNative[] =	"¥ ",
-				kGovRulerNative[] = "¡ ";
+	const char	kConRulerNative[] =	"â€¢ ",
+				kGovRulerNative[] = "Â° ";
 
 #endif
 	
@@ -451,7 +451,7 @@ LineHeadOut(
 	}
 
 #pragma mark -
-#pragma mark ¥ Defer Time Handlers
+#pragma mark â€¢ Defer Time Handlers
 
 /******************************************************************************************
  *
@@ -860,7 +860,7 @@ IChingDoBang(
 	}
 
 #pragma mark -
-#pragma mark ¥ Object Message Handlers
+#pragma mark â€¢ Object Message Handlers
 
 /******************************************************************************************
  *
